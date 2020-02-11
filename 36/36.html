@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - BBBootstrap</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <style>
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+	
+body {
+    font-family: 'Rubik', sans-serif;
+    background: #eee;
+}
+
+.container{
+    margin-top:250px !important;
+}
+
+button{
+    font-size: calc(11px + (16 - 11) * ((100vw - 360px) / (1600 - 300))) !important;
+}
+
+ p {
+    font-size: calc(12px + (16 - 12) * ((100vw - 360px) / (1600 - 300))) !important;
+}
+
+
+button:focus {
+    box-shadow: none !important;
+    outline-width: 0;
+}
+
+.card{
+    border-radius :12px;
+    width: calc(500px + 8 * ((100vw - 320px) / 680)) ;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8) ;
+}
+
+.card-header{
+    border-radius :12px !important;
+}
+
+.modal-body .btn-danger{
+    border-radius: 11px ;
+    box-shadow:  0px 5px 5px rgba(0, 0, 0, 0.2) ;
+}
+ .btn-light{
+     background: transparent !important;
+     border:0px !important;
+ }
+
+ .btn-light:hover{
+    border-color:#fff !important;
+ }
+
+ .btn-light:active{
+    border-color:#fff !important;
+ }
+
+ span{
+    font-size: 30px !important;
+}
+
+.modal-content{
+    background: transparent !important;
+}
+
+.modal {
+    background-image: linear-gradient(rgb(255, 199, 199) 0%, rgb(255, 255, 255) 100.2%);
+}
+
+@media (max-width: 526px) {
+    .card{
+        width: unset;
+    } 
+}
+
+    </style>
+</head>
+<body>
+<div class="container d-flex justify-content-center">
+    <button class="btn btn-danger  " data-toggle="modal" data-target="#my-modal">Confirm Delete</button>
+    <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-0">   
+                <div class="modal-body p-0 ">
+                    <div class="card border-0 p-sm-auto p-0 justify-content-center">
+                        <div class="card-header pb-0 bg-white border-0 "><div class="row"><div class="col ml-auto"><button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button></div> </div>
+                        <p class="font-weight-bold mb-2"> Are you sure you wanna delete this ?</p><p class="text-muted "> This change will reflect in your portal after an hour.</p>     </div>
+                        <div class="card-body px-sm-4 mb-2 pt-1 pb-0"> 
+                            <div class="row no-gutters"><div class="col-auto"><button type="button" class="btn btn-danger px-4 mb-3" data-dismiss="modal">Delete</button></div><div class="col-auto"><button type="button" class="btn btn-light text-muted" data-dismiss="modal">Cancel</button></div></div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+</body>
+
+</html>

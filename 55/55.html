@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--footer link-->
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PRICING</title>
+
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Style the body */
+  body {
+    font-family: Arial;
+    margin: 0;
+
+  }
+
+  #nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .navbar {
+    background-color: #52ace0;
+    padding: 0 !important;
+  }
+
+  .navbar-brand img {
+
+    padding-left: 20px;
+  }
+
+  .navbar-nav li {
+    padding: 0 10px;
+  }
+
+  .navbar-nav li a {
+    color: #06648B !important;
+    font-weight: 600px;
+    /* float:right;
+    text-align: left;*/
+  }
+
+  .fa-bars {
+    color: #fff;
+    font-size: 30px !important;
+  }
+
+
+  .bs-example {
+    margin: 15px;
+
+  }
+
+  .megamenu-li {
+    position: static;
+  }
+
+  .megamenu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 15px;
+  }
+
+  h7 {
+    font-size: 20px;
+  }
+
+  .abc {
+    margin-left: 240px;
+    margin-top: -18px;
+  }
+
+  /*----------------------------------------BANNER SECTION----------------------------------------*/
+
+
+  #banner {
+    background-image: url("img/Landing-BG-03.png");
+    color: #fff;
+  }
+
+  .promo-title {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 100px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 80px;
+  }
+
+
+  #image_spec {
+    height: 550px;
+    width: 500px;
+    margin-top: 0px;
+
+  }
+
+  .button-white {
+    background-color: #1A4E87;
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 70px;
+  }
+
+  .blue:hover {
+    background-color: inherit;
+    border: 2px solid #1A4E87;
+    color: #1A4E87;
+    font-weight: bold;
+    border-radius: 70px;
+
+  }
+
+
+  /* style pricing */
+  .pb-100 {
+    padding-bottom: 100px;
+  }
+
+  .pt-100 {
+    padding-top: 50px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .section-title h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+    text-transform: capitalize;
+    margin: 15px 0;
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .section-title p {
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .black-bg .section-title h2,
+  .black-bg .section-title h4,
+  .black-bg .section-title p {
+    color: #fff
+  }
+
+  .section-title h2:before {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 1px;
+    background-color: #777;
+    bottom: 0;
+    left: 50%;
+    margin-left: -75px;
+  }
+
+  .section-title h2:after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: #e16038;
+    border: darkblue;
+    bottom: -1px;
+    left: 50%;
+    margin-left: -40px;
+  }
+
+  .section-title {
+    margin-bottom: 70px;
+  }
+
+  .single-price {
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .price-title h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .price-tag {
+    margin: 30px 0;
+  }
+
+  .price-tag {
+    margin: 30px 0;
+    background-color: #fafafa;
+    color: #000;
+    padding: 10px 0;
+  }
+
+  .center.price-tag {
+    background-color: tomato;
+    color: #fff
+  }
+
+  .price-tag h2 {
+    font-size: 45px;
+    font-weight: 600;
+    font-family: poppins;
+  }
+
+  .price-tag h2 span {
+    font-weight: 300;
+    font-size: 16px;
+    font-style: italic;
+  }
+
+  .price-item ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .price-item ul li {
+    font-size: 14px;
+    padding: 5px 0;
+    border-bottom: 1px dashed #eee;
+    margin: 5px 0;
+  }
+
+  .price-item ul li:last-child {
+    border-bottom: 0;
+  }
+
+  .single-price a {
+    margin-top: 15px;
+  }
+
+  a.box-btn {
+    background-color: tomato;
+    padding: 5px 20px;
+    display: inline-block;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 3px;
+    font-size: 15px;
+    transition: .3s;
+  }
+
+  a.box-btn:hover,
+  a.border-btn:hover {
+    background-color: #d35400;
+  }
+
+  /*.............footer..............................*/
+
+  /*=-footer-=*/
+  footer {
+    color: #fff;
+    background-attachment: fixed;
+    background-color: #52ace0;
+    background-image: url(https://s7.postimg.org/uyf0oioaz/footer-bg.png);
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  footer p {
+    color: #E9F4FF;
+  }
+
+  footer a {
+    color: #E9F4FF;
+  }
+
+  .social-pet li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .social-pet li a {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    line-height: 35px;
+    background-color: #3a5a95;
+    color: #fff;
+  }
+
+  .social-pet li:nth-child(2) a {
+    background-color: #57aced;
+  }
+
+  .social-pet li:nth-child(3) a {
+    background-color: #dd4f43;
+  }
+
+  .social-pet li:nth-child(4) a {
+    background-color: #6b27b2;
+  }
+
+  .social-pet li a:hover {
+    background-color: #0141a2;
+  }
+
+  .social-pet li a:hover i {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+
+  .recent-post li {
+    display: block;
+    color: #ccc;
+    margin-bottom: 25px;
+  }
+
+  .recent-post li label {
+    float: left;
+    border: 2px solid #ccc;
+    padding: 1px 7px;
+    text-align: center;
+  }
+
+  .recent-post li label span {
+    color: #fff;
+  }
+
+  footer .input-group-addon {
+    background-color: #0141a2;
+    padding: 10px;
+  }
+
+  .f-address li {
+    display: inline-block;
+  }
+
+  .f-address li i {
+    color: #2995de;
+    font-size: 18px;
+  }
+
+  .f-address li a {
+    color: #ccc;
+  }
+
+  .forebg {
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 70;
+  }
+
+  /*=................................-Copyright-.........................=*/
+  .copyright {
+    background-color: #111;
+    padding: 30px;
+    font-size: 14px;
+    color: white;
+
+  }
+
+  h5 {
+    font-size: 18px !important;
+  }
+
+  .svg {
+    overflow: hidden;
+    vertical-align: sub !important;
+  }
+
+
+  .btn {
+    border-radius: 500px !important;
+    padding: 8px !important;
+    width: -webkit-fill-available;
+    margin: auto !important;
+    font-size:calc(11px + (13 - 11) * ((100vw - 320px) / (1600 - 320))) !important;
+
+  }
+
+  .card-header,
+  .card-footer {
+    background: transparent !important;
+  }
+
+  .first {
+    border-top: 5px solid grey !important;
+  }
+
+  .second {
+    border-top: 5px solid rgb(255, 94, 0) !important;
+  }
+
+  .third {
+    border-top: 5px solid rgb(0, 17, 255) !important;
+  }
+
+  .card-header,
+  .card-footer {
+    border: none !important;
+  }
+
+  .learn-more {
+    cursor: pointer !important;
+  }
+
+  .custom-select-1 {
+    position: relative;
+    font-family: Arial;
+    width: 150px !important;
+    
+  }
+
+  .custom-select-1 select {
+    display: none !important;
+    /*hide original SELECT element:*/
+    border-radius: 50px !important;
+  }
+
+  .select-selected {
+    background-color: #52ace0 !important;
+  }
+
+  .select-items div, .select-selected {
+    border-radius: 50px !important;
+  }
+
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "" !important;
+    top: 18px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+
+  /*style the items (options), including the selected item:*/
+  .select-items div,
+  .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #52ace0;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover,
+  .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 476px)  {
+    h4{
+      font-size: 16px !important;
+    }
+
+    .select-items div, .select-selected {
+    color: #ffffff;
+    padding: 5px 12px;
+    }
+  }
+</style>
+
+<body>
+  <div class="container-fluid">
+
+
+
+    <div class="row  py-5  ">
+
+      <div class="col d-flex justify-content-center">
+        <section>
+          <div class="row justify-content-center no-gutters  ">
+            <div class="col-auto   col-md-4 align-items-stretch">
+              <div class="card h-100 first">
+                <div class="card-header">
+
+                  <div class="row justify-content-between">
+                    <div class="col-auto">
+                      <h5 class="font-weight-bold">Basic Plan</h5>
+                      <h6 class="card-subtitle text-muted small">Out Basic Plan is free for all</h6>
+                    </div>
+                    <div class="col-auto ml-md-4">
+                      <h5><span class="badge badge-success mt-md-2">FREE</span></h5>
+
+                    </div>
+                  </div>
+                  <hr>
+
+                </div>
+                <div class="card-body mt-md-0 pt-md-0">
+                  <!-- List with icons -->
+                  <p class="mb-2">
+                    <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="20" width="20"
+                      viewBox="0 0 21 21">
+                      <path
+                        d="M10.5 20.81C4.701 20.81 0 16.183 0 10.476 0 4.768 4.701.14 10.5.14S21 4.768 21 10.476c0 5.707-4.701 10.334-10.5 10.334zm-2.1-6.966c.017.203.13.382.302.476.17.094.375.09.543-.01l5.232-3.314a.565.565 0 0 0 .223-.454c0-.18-.083-.35-.223-.453L9.245 6.715a.542.542 0 0 0-.543-.01.599.599 0 0 0-.302.476v6.663z"
+                        fill="current-color" class="text-success"></path>
+                    </svg><span class="ml-2 font-weight-bold ">Online class</span>
+                  </p>
+
+                  <ul class="list-unstyled list pl-4">
+                    <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Video
+                      Classes.
+                    </li>
+                    <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Live
+                      Classes.</li>
+                    <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Stories.
+                    </li>
+                    <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Concepts.
+                    </li>
+
+                  </ul>
+                </div>
+                <div class="card-footer text-center">
+
+                  <div class="mb-4">
+                    <button type="button" class="btn btn-outline-secondary  "> <span class="font-weight-bold mb-3">FREE
+                        PLAN</span></button>
+
+                  </div>
+                  <span class="font-weight-bold mt-3 small text-primary learn-more"> LEARN MORE </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto  col-md-4 align-items-stretch">
+              <div class="card h-100 second">
+                <div class="card-header">
+                  <div class="row justify-content-between">
+                    <div class="col-auto">
+                      <h5 class="font-weight-bold">Advanced Plan</h5>
+                      <h6 class="card-subtitle text-muted small">For class 8</h6>
+                    </div>
+                    <div class="col-auto">
+                      <h4 class="font-weight-bold">&#8377; 24,000</h4>
+
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+                <div class="card-body pt-md-0">
+                  <!-- List with icons -->
+                  <div class="card-content mb-4">
+                    <p class="mb-2">
+                      <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="20" width="20"
+                        viewBox="0 0 21 21">
+                        <path
+                          d="M10.5 20.81C4.701 20.81 0 16.183 0 10.476 0 4.768 4.701.14 10.5.14S21 4.768 21 10.476c0 5.707-4.701 10.334-10.5 10.334zm-2.1-6.966c.017.203.13.382.302.476.17.094.375.09.543-.01l5.232-3.314a.565.565 0 0 0 .223-.454c0-.18-.083-.35-.223-.453L9.245 6.715a.542.542 0 0 0-.543-.01.599.599 0 0 0-.302.476v6.663z"
+                          fill="current-color" class="text-success"></path>
+                      </svg><span class="ml-2 font-weight-bold pt-md-0">Online class</span>
+                    </p>
+
+                    <ul class="list-unstyled list pl-4">
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Video
+                        Classes.
+                      </li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Live
+                        Classes.</li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Stories.
+                      </li>
+                      <li class=" d-flex align-items-center mb-1"><i
+                          class="fa fa-check mr-3  text-success"></i>Concepts. </li>
+
+                    </ul>
+                  </div>
+                  <div class="card-content mb-4">
+                    <p class="mb-2">
+                      <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="20" width="20"
+                        viewBox="0 0 21 21">
+                        <path
+                          d="M10.5 21C4.701 21 0 16.299 0 10.5S4.701 0 10.5 0 21 4.701 21 10.5 16.299 21 10.5 21zm-.032-7.226h1.993L10.233 7H7.8l-2.2 6.774h2.003l.341-1.265h2.192l.332 1.265zm-.71-2.76H8.321a78.56 78.56 0 0 0 .543-2.127c.081-.36.136-.618.163-.775.031.17.095.45.192.84.097.39.18.709.247.955l.29 1.107zM13.6 9.602v1.11h.828v-1.11h1.144v-.824H14.43V7.649h-.83v1.129h-1.144v.824H13.6z"
+                          fill="current-color" class="text-primary"></path>
+
+                      </svg><span class="ml-2 font-weight-bold ">Mock Tests</span>
+                    </p>
+
+                    <ul class="list-unstyled list pl-4">
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>All
+                        India test series.
+                      </li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Previous
+                        papers.</li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Create
+                        your own tests.</li>
+                      <li class=" d-flex align-items-center mb-1"><i
+                          class="fa fa-check mr-3  text-success"></i>Personalised reports. </li>
+
+                    </ul>
+                  </div>
+                  <div class="card-content mb-4">
+                    <p class="mb-2">
+                      <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="20" width="20"
+                        viewBox="0 0 21 21">
+                        <path
+                          d="M10.5 21C4.701 21 0 16.299 0 10.5S4.701 0 10.5 0 21 4.701 21 10.5 16.299 21 10.5 21zm2.926-12.48l.12 4.081 1.613.048-.12-4.081-1.613-.048zm1.218-1.618l-.72-.02a.47.47 0 0 0-.489.488l.02.69 1.613.047-.024-.804a.418.418 0 0 0-.4-.4zm-.379 7.313c.054.082.173.085.22.004l.648-1.096-1.612-.048.744 1.14zM12.1 6.775H5.98c-.113 0-.204.098-.204.219v7.037c0 .121.091.219.204.219h6.12c.113 0 .204-.098.204-.219V6.994c0-.12-.091-.219-.204-.219zm-3.934 5.833H7.29c-.113 0-.205-.098-.205-.219 0-.12.092-.219.205-.219h.874c.113 0 .204.098.204.219s-.091.219-.204.219zm0-1.877H7.29c-.113 0-.205-.098-.205-.219 0-.12.092-.218.205-.218h.874c.113 0 .204.098.204.218 0 .121-.091.22-.204.22zm0-1.876H7.29c-.113 0-.205-.098-.205-.22 0-.12.092-.218.205-.218h.874c.113 0 .204.098.204.219 0 .12-.091.219-.204.219zm2.767 3.22l-.874.938a.197.197 0 0 1-.145.064.197.197 0 0 1-.144-.064l-.437-.47a.23.23 0 0 1 0-.309.194.194 0 0 1 .289 0l.292.314.73-.783a.194.194 0 0 1 .289 0 .23.23 0 0 1 0 .31zm0-1.877l-.874.939a.197.197 0 0 1-.145.064.197.197 0 0 1-.144-.064l-.437-.47a.23.23 0 0 1 0-.31.194.194 0 0 1 .289 0l.292.315.73-.783a.194.194 0 0 1 .289 0 .23.23 0 0 1 0 .31zm0-1.876l-.874.938a.197.197 0 0 1-.145.064.197.197 0 0 1-.144-.064l-.437-.47a.23.23 0 0 1 0-.309.194.194 0 0 1 .289 0l.292.314.73-.783a.194.194 0 0 1 .289 0 .23.23 0 0 1 0 .31z"
+                          fill="current-color" class="text-warning"></path>
+                      </svg>
+                      <span class="ml-1 font-weight-bold">Adaptive Practice</span>
+                    </p>
+                    <ul class="list-unstyled list pl-4">
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Practice
+                        goals.
+                      </li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Question
+                        sets.</li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Skill
+                        test.</li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Crash
+                        course. </li>
+
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="card-footer text-center">
+
+                  <div class="mb-4">
+                    <button type="button" class="btn btn-pill btn-success "> <span class="font-weight-bold mb-3">JOIN
+                        NOW</span></button>
+
+                  </div>
+                  <span class="font-weight-bold mt-3 small text-primary learn-more"> LEARN MORE </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto      col-md-4 a">
+              <div class="card h-100 third ">
+                <div class="card-header">
+                  <div class="row justify-content-between">
+                    <div class="col-auto">
+                      <h5 class="font-weight-bold">Ultimate Plan</h5>
+                      <h6 class="card-subtitle text-muted small">For class 8</h6>
+                    </div>
+                    <div class="col-auto">
+                      <h4 class="font-weight-bold">&#8377; 36,000</h4>
+
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+                <div class="card-body py-md-0 ">
+                  <!-- List with icons -->
+                  <div class="card-content mb-4 ">
+                    <p class="mb-2">
+                      <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="20" width="20"
+                        viewBox="0 0 21 21">
+                        <path
+                          d="M10.5 20.81C4.701 20.81 0 16.183 0 10.476 0 4.768 4.701.14 10.5.14S21 4.768 21 10.476c0 5.707-4.701 10.334-10.5 10.334zm-2.1-6.966c.017.203.13.382.302.476.17.094.375.09.543-.01l5.232-3.314a.565.565 0 0 0 .223-.454c0-.18-.083-.35-.223-.453L9.245 6.715a.542.542 0 0 0-.543-.01.599.599 0 0 0-.302.476v6.663z"
+                          fill="current-color" class="text-success"></path>
+                      </svg><span class="ml-2 font-weight-bold ">Online class</span>
+                    </p>
+
+                    <ul class="list-unstyled list pl-4">
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Video
+                        Classes.
+                      </li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Live
+                        Classes.</li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Stories.
+                      </li>
+                      <li class=" d-flex align-items-center mb-1"><i
+                          class="fa fa-check mr-3  text-success"></i>Concepts. </li>
+
+                    </ul>
+                  </div>
+                  <div class="card-content mb-4">
+                    <p class="mb-2">
+                      <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="20" width="20"
+                        viewBox="0 0 21 21">
+                        <path
+                          d="M10.5 21C4.701 21 0 16.299 0 10.5S4.701 0 10.5 0 21 4.701 21 10.5 16.299 21 10.5 21zm-.032-7.226h1.993L10.233 7H7.8l-2.2 6.774h2.003l.341-1.265h2.192l.332 1.265zm-.71-2.76H8.321a78.56 78.56 0 0 0 .543-2.127c.081-.36.136-.618.163-.775.031.17.095.45.192.84.097.39.18.709.247.955l.29 1.107zM13.6 9.602v1.11h.828v-1.11h1.144v-.824H14.43V7.649h-.83v1.129h-1.144v.824H13.6z"
+                          fill="current-color" class="text-primary"></path>
+
+                      </svg><span class="ml-2 font-weight-bold ">Mock Tests</span>
+                    </p>
+
+                    <ul class="list-unstyled list pl-4">
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>All
+                        India test series.
+                      </li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Previous
+                        papers.</li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Create
+                        your own tests.</li>
+                      <li class=" d-flex align-items-center mb-1"><i
+                          class="fa fa-check mr-3  text-success"></i>Personalised reports. </li>
+
+                    </ul>
+                  </div>
+                  <div class="card-content mb-4">
+                    <p class="mb-2">
+                      <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="20" width="20"
+                        viewBox="0 0 21 21">
+                        <path
+                          d="M10.5 21C4.701 21 0 16.299 0 10.5S4.701 0 10.5 0 21 4.701 21 10.5 16.299 21 10.5 21zm2.926-12.48l.12 4.081 1.613.048-.12-4.081-1.613-.048zm1.218-1.618l-.72-.02a.47.47 0 0 0-.489.488l.02.69 1.613.047-.024-.804a.418.418 0 0 0-.4-.4zm-.379 7.313c.054.082.173.085.22.004l.648-1.096-1.612-.048.744 1.14zM12.1 6.775H5.98c-.113 0-.204.098-.204.219v7.037c0 .121.091.219.204.219h6.12c.113 0 .204-.098.204-.219V6.994c0-.12-.091-.219-.204-.219zm-3.934 5.833H7.29c-.113 0-.205-.098-.205-.219 0-.12.092-.219.205-.219h.874c.113 0 .204.098.204.219s-.091.219-.204.219zm0-1.877H7.29c-.113 0-.205-.098-.205-.219 0-.12.092-.218.205-.218h.874c.113 0 .204.098.204.218 0 .121-.091.22-.204.22zm0-1.876H7.29c-.113 0-.205-.098-.205-.22 0-.12.092-.218.205-.218h.874c.113 0 .204.098.204.219 0 .12-.091.219-.204.219zm2.767 3.22l-.874.938a.197.197 0 0 1-.145.064.197.197 0 0 1-.144-.064l-.437-.47a.23.23 0 0 1 0-.309.194.194 0 0 1 .289 0l.292.314.73-.783a.194.194 0 0 1 .289 0 .23.23 0 0 1 0 .31zm0-1.877l-.874.939a.197.197 0 0 1-.145.064.197.197 0 0 1-.144-.064l-.437-.47a.23.23 0 0 1 0-.31.194.194 0 0 1 .289 0l.292.315.73-.783a.194.194 0 0 1 .289 0 .23.23 0 0 1 0 .31zm0-1.876l-.874.938a.197.197 0 0 1-.145.064.197.197 0 0 1-.144-.064l-.437-.47a.23.23 0 0 1 0-.309.194.194 0 0 1 .289 0l.292.314.73-.783a.194.194 0 0 1 .289 0 .23.23 0 0 1 0 .31z"
+                          fill="current-color" class="text-warning"></path>
+                      </svg>
+                      <span class="ml-1 font-weight-bold  ">Adaptive Practice</span>
+                    </p>
+
+                    <ul class="list-unstyled list pl-4">
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Practice
+                        goals.
+                      </li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Question
+                        sets.</li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Skill
+                        test.</li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Crash
+                        course. </li>
+
+                    </ul>
+                  </div>
+                  <div class="card-content mb-4">
+                    <p class="mb-2">
+                      <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="20" width="20"
+                        viewBox="0 0 21 21">
+                        <path
+                          d="M10.5 21C4.701 21 0 16.299 0 10.5S4.701 0 10.5 0 21 4.701 21 10.5 16.299 21 10.5 21zm-2.033-6.295l.022.01a4.64 4.64 0 0 0 2.548.425 4.583 4.583 0 0 0 2.274-.914 4.856 4.856 0 0 0 1.677-2.354 5.084 5.084 0 0 0 .136-2.546 4.867 4.867 0 0 0-.916-1.985 4.719 4.719 0 0 0-2.697-1.722 4.876 4.876 0 0 0-1.35-.096 4.58 4.58 0 0 0-1.41.326 4.762 4.762 0 0 0-2.053 1.619 4.816 4.816 0 0 0-.847 1.988 5.023 5.023 0 0 0 .253 2.672c.115.293.258.574.426.838l-.746 2.245 2.683-.506zm1.777-7.132c.134-.15 0 0 0 0a.353.353 0 0 1 .519.007l2.45 2.503c.11.108.132.29.062.426-.029.054-.074.096-.115.139l-.378.385c-.037.038-.074.078-.117.109a.337.337 0 0 1-.36.011.538.538 0 0 1-.115-.098c-.33-.338-.661-.674-.99-1.013-.003.894 0 1.789-.001 2.683-.001.079.006.162-.023.237a.357.357 0 0 1-.326.233h-.7a.359.359 0 0 1-.342-.286c-.009-.047-.006-.095-.006-.142v-2.666a.26.26 0 0 0-.005-.057c-.338.352-.681.698-1.022 1.046a.351.351 0 0 1-.493.007c-.167-.168-.332-.338-.497-.507a.37.37 0 0 1 .001-.507l2.458-2.51z"
+                          fill="current-color " class="text-danger"></path>
+                      </svg><span class="ml-2 font-weight-bold ">Live Doubts</span>
+                    </p>
+
+                    <ul class="list-unstyled list pl-4">
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Instant
+                        solutions.</li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>Expert
+                        tutors.</li>
+                      <li class=" d-flex align-items-center mb-1"><i class="fa fa-check mr-3  text-success"></i>24/7
+                        Help.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="card-footer text-center pt-md-0">
+
+                  <div class="mb-4">
+                    <button type="button" class="btn btn-pill btn-success "> <span class="font-weight-bold mb-3">JOIN
+                        NOW</span></button>
+
+                  </div>
+                  <span class="font-weight-bold mt-3 small text-primary learn-more"> LEARN MORE </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+
+      </div>
+    </div>
+
+
+  
+    <!-- .........................................Copyright............................................ -->
+    <section class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 ">
+            <div class="text-center ">
+              Copyright &copy; 2020 Chatorikar - All Rights Reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    var x, i, j, selElmnt, a, b, c;
+    /*look for any elements with the class "custom-select-1":*/
+    x = document.getElementsByClassName("custom-select-1");
+    for (i = 0; i < x.length; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      /*for each element, create a new DIV that will act as the selected item:*/
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+      /*for each element, create a new DIV that will contain the option list:*/
+      b = document.createElement("DIV");
+      b.setAttribute("class", "select-items select-hide");
+      for (j = 1; j < selElmnt.length; j++) {
+        /*for each option in the original select element,
+        create a new DIV that will act as an option item:*/
+        c = document.createElement("DIV");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+        c.addEventListener("click", function (e) {
+          /*when an item is clicked, update the original select box,
+          and the selected item:*/
+          var y, i, k, s, h;
+          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+          h = this.parentNode.previousSibling;
+          for (i = 0; i < s.length; i++) {
+            if (s.options[i].innerHTML == this.innerHTML) {
+              s.selectedIndex = i;
+              h.innerHTML = this.innerHTML;
+              y = this.parentNode.getElementsByClassName("same-as-selected");
+              for (k = 0; k < y.length; k++) {
+                y[k].removeAttribute("class");
+              }
+              this.setAttribute("class", "same-as-selected");
+              break;
+            }
+          }
+          h.click();
+        });
+        b.appendChild(c);
+      }
+      x[i].appendChild(b);
+      a.addEventListener("click", function (e) {
+        /*when the select box is clicked, close any other select boxes,
+        and open/close the current select box:*/
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("select-hide");
+        this.classList.toggle("select-arrow-active");
+      });
+    }
+    function closeAllSelect(elmnt) {
+      /*a function that will close all select boxes in the document,
+      except the current select box:*/
+      var x, y, i, arrNo = [];
+      x = document.getElementsByClassName("select-items");
+      y = document.getElementsByClassName("select-selected");
+      for (i = 0; i < y.length; i++) {
+        if (elmnt == y[i]) {
+          arrNo.push(i)
+        } else {
+          y[i].classList.remove("select-arrow-active");
+        }
+      }
+      for (i = 0; i < x.length; i++) {
+        if (arrNo.indexOf(i)) {
+          x[i].classList.add("select-hide");
+        }
+      }
+    }
+    /*if the user clicks anywhere outside the select box,
+    then close all select boxes:*/
+    document.addEventListener("click", closeAllSelect);
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+

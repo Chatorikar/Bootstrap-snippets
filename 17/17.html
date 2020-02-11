@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - BBBootstrap</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <style>
+ 
+     
+
+        body , html{
+            background: linear-gradient(to right, #ffffff, #6da4f5);
+        }
+        
+
+        .container {
+            margin-top: calc(75px + (200 - 75) * ((100vw - 360px) / (1600 - 360))) !important ;
+            margin-bottom: calc(75px + (150 - 75) * ((100vw - 360px) / (1600 - 360))) !important ;
+        }
+
+
+        .btn {
+            border:1px solid rgb(231, 231, 231);
+            font-size: 0.7rem !important;
+            font-weight: bolder;
+            padding: 2px;            
+            border-radius: 0px;
+        } 
+
+        .custom-select,
+        .btn:focus,
+        .btn:active {
+            outline: none !important;
+            box-shadow: none !important
+        } 
+
+        .btn-outline-dark:hover {
+            color: #fff !important;
+            background-color: #2196F3 !important;
+            border-color: #fff !important;
+        }
+
+       
+        p {
+            font-size: 0.7em;
+            font-weight: 700;
+        }
+      
+        button{
+            padding: 13px 10px !important;
+        }
+    
+        .custom-select-lg {
+            border-radius: 0px;
+            height: calc(1.8em + 0.6rem + 14px);
+            font-size: 12px !important;
+            padding-right: 2.8rem;
+        }   
+
+        .menu-1{
+            font-size: 14px;
+        }
+
+        .list-group{
+            box-shadow:0px 5px 15px rgba(0, 0, 0, 0.8) !important;
+        }
+
+        p{
+            font-size: calc(14px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important ;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center">
+        <div class="row ">
+            <div class="col-lg-12 mx-auto ">
+                <ul class="list-group shadow-lg">
+                    <li class="list-group-item">
+                        <h6 class="font-weight-bold mb-0">Best value</h6>
+                        <small class="text-muted "> Buy 2kg and Get 1kg FREE</small>
+                        <div class="media  align-item-center  mt-4 "><img class="align-self-center img-fluid mr-md-2" src="https://images-na.ssl-images-amazon.com/images/I/71O6hR7nKQL._SX679_.jpg"  width="120" height="120">
+                            <div class="media-body"><p class="mt-0 mb-3 ">Quaker Oats, Cartoon </p>
+                                <div class="row menu-1">
+                                    <div class="col-auto font-weight-bold pr-2"> &#8377;80 </div>
+                                    <div class="flex-col"> <small> <del class="text-muted">100</del> </small></div>
+                                    <div class="col-auto pl-2"><small class="text-success font-weight-bold">&#8377;20 off </small></div>
+                                </div>
+                                <div class="row mt-4 no-gutters mx-auto"><div class="col-auto flex-column mr-2"><select class="custom-select custom-select-lg font-weight-bold"><option selected>2 Kg</option><option value="1">5 Kg</option><option value="2">10 Kg</option></select></div>
+                                    <div class="col-auto"> <button type="button" class="btn px-3  btn-outline-dark btn-lg text-primary font-weight-bold px-4 mt-sm-0 mt-1"> Add item</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">   
+                        <div class="media  align-item-center  my-3"><img class="align-self-center img-fluid mr-md-2" src="https://images-na.ssl-images-amazon.com/images/I/81I6MHJTaLL._SX679_.jpg"  width="120" height="120">
+                            <div class="media-body">
+                                <p class="mt-0 mb-3 ">Nescafe Red Cub Premium </p>
+                                <div class="row menu-1">
+                                    <div class="col-auto font-weight-bold pr-2"> &#8377;130 </div>
+                                    <div class="flex-col "> <small> <del class="text-muted">200</del> </small></div>
+                                    <div class="col-auto pl-2"><small class="text-success font-weight-bold">&#8377;70 off</small></div>
+                                </div>
+                                <div class="row mt-4 no-gutters mx-auto">
+                                    <div class="col-auto mr-2"><select class="custom-select custom-select-lg font-weight-bold"><option selected>2 Kg</option> <option value="1">5 Kg</option> <option value="2">10 Kg</option> </select></div>
+                                    <div class="col-auto"> <button type="button" class="btn btn btn-outline-dark btn-lg text-primary font-weight-bold px-4 mt-sm-0 mt-1"> Add item</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">   
+                        <div class="media  align-item-center  my-3"><img class="align-self-center img-fluid mr-md-2" src="https://images-na.ssl-images-amazon.com/images/I/71CNlML%2BcbL._SX679_.jpg"  width="120" height="120">
+                            <div class="media-body">
+                                <p class="mt-0 mb-3 ">Nescafe Red Cub Premium </p>
+                                <div class="row menu-1">
+                                    <div class="col-auto font-weight-bold pr-2"> &#8377;130 </div>
+                                    <div class="flex-col "> <small> <del class="text-muted">200</del> </small></div>
+                                    <div class="col-auto pl-2"><small class="text-success font-weight-bold">&#8377;70 off</small></div>
+                                </div>
+                                <div class="row mt-4 no-gutters mx-auto">
+                                    <div class="col-auto mr-2"><select class="custom-select custom-select-lg font-weight-bold"><option selected>2 Kg</option> <option value="1">5 Kg</option> <option value="2">10 Kg</option> </select></div>
+                                    <div class="col-auto"> <button type="button" class="btn btn btn-outline-dark btn-lg text-primary font-weight-bold px-4 mt-sm-0 mt-1"> Add item</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

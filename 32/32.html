@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - BBBootstrap</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <style>
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+body {
+    min-height: 82.5vh;
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(140deg, #fff, 50%, #74a0ff) center center;
+}
+
+.container{
+    margin-top: 150px !important;
+}
+
+img{
+    width: 250px;
+}
+
+button:focus {
+    box-shadow: none !important;
+    outline-width: 0;
+}
+
+.card{
+    border-radius:11px !important;
+    width: calc(330px + 10 * ((100vw - 320px) / 680)) ;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5) ;
+    border-top-color: #52B4DB !important;
+}
+
+.card-header{
+    border:0;
+    border-top: 14px solid #52B4DB !important;
+    border-radius:11px !important;
+    
+}
+
+.btn-outline-success{
+    border-radius: 20px !important;
+    border:2px solid #52B4DB !important;
+
+}
+
+.btn-outline-success:hover{
+    color: #fff !important;
+    background-color: #52B4DB !important;
+}
+
+img{
+    width: 350px !important;
+}
+
+.card-body{
+    border-radius: 9px !important;
+}
+
+.btn-outline-success:active, .btn-outline-success.active {
+	box-shadow: none !important;
+    outline: none !important;
+}
+
+@media (max-width: 401px) {
+    .card{
+        width: unset;
+    }   
+}
+
+    </style>
+
+</head>
+
+<body>
+<div class="container d-flex justify-content-center ">
+  <div class="row d-flex justify-content-center ">
+      <div class="col">
+            <div class="card border-0">
+                <div class="card-header pb-0 pr-5 bg-white"> <h5 class="font-weight-bold mt-2">Your documnets being reviewed by our experts </h5></div>
+                <div class="card-body">
+                    <p class="text-muted text-left"> We'll notify you as soon as your documnets have been reviewd,and appored by our expert team</p>
+                    <img src="https://i.imgur.com/F5hfOap.jpg" class="img-fluid" />
+                    <div class="row justify-content-center mt-4"><div class="col-6"><button type="button" class="btn btn-outline-success btn-block font-weight-bold text-dark">Got it</button></div></div>
+                </div>
+            </div>
+      </div>
+  </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+</body>
+
+</html>

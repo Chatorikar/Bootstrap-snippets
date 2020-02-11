@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - BBBootstrap</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <style>
+        body {
+            background: #eee;
+            letter-spacing: 0.5px;
+
+        }
+
+        .container {
+            margin-top: 200px
+        }
+
+        h6{
+            font-size: 12px !important;
+        }
+
+        h5{
+            font-size: 15px !important;
+        }
+
+        img {
+            vertical-align: bottom;
+        }
+
+        .download{
+            margin-top: 3px;
+        }   
+
+        body , html{
+            background: linear-gradient(to left, #77d4f0, #ffffff);
+        }
+        .card-footer{
+            border: none !important;
+            background-color: #fff;
+            cursor: pointer;
+            padding-top: 0 ;
+        }
+
+        .card-body {
+            padding-bottom: 0;
+        }
+
+        .card{
+            box-shadow: 0 8px 5px rgba(0, 0, 0, .5) !important;
+        }
+
+    </style>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+
+</head>
+
+<body>
+    <div class=" container d-flex justify-content-center">
+        <div class="row justify-content-center card-columns">
+            
+            <div class=" col-md-4 col-sm-5 col-8">
+                <div class="card" >
+                    <div class="card-body ">
+                        <span ><img  class="pull-left mr-2"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sketch_Logo.svg/394px-Sketch_Logo.svg.png"  width="21" height="21"> <h5 class="font-weight-bold mt-1 ">Sketch</h5> </span>  
+                        <h6 class="card-text mt-2 ">Enjoy this free design resource for Sketch.</h6>
+                    </div>
+                    <div class="card-footer d-flex flex-nowrap pl-3   " >
+                        <div class="first">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffc107"><path d="M80.625,21.5v89.02344l-28.38672,-28.38672l-7.72656,7.72656l37.625,37.625l3.86328,3.69531l3.86328,-3.69531l37.625,-37.625l-7.72656,-7.72656l-28.38672,28.38672v-89.02344zM37.625,139.75v10.75h96.75v-10.75z"></path></g></g></svg>
+                                <small class="font-weight-bold text-warning download" >Download now</small>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class=" col-md-4 col-sm-5  col-8 ">
+                <div class="card">
+                    <div class="card-body ">
+                        <span ><img alt="File:Sketch Logo.svg" class="pull-left mr-2"  src="https://mhsseagleeye.com/wp-content/uploads/2018/04/photoshop2.png"  width="25" height="25"> <h5 class="font-weight-bold mt-1 ">Photoshop</h5> </span>  
+                        <h6 class="card-text mt-2 ">Enjoy this free design resource for Photoshop.</h6>
+                    </div>
+                    <div class="card-footer d-flex flex-nowrap pl-3 " >
+                        <div class="second">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0275d8"><path d="M80.625,21.5v89.02344l-28.38672,-28.38672l-7.72656,7.72656l37.625,37.625l3.86328,3.69531l3.86328,-3.69531l37.625,-37.625l-7.72656,-7.72656l-28.38672,28.38672v-89.02344zM37.625,139.75v10.75h96.75v-10.75z"></path></g></g></svg>
+                                <small class="font-weight-bold text-primary download" >Download now</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+    <script type='text/javascript'>
+         $('.second').hide();
+         $('.first').hide();
+        $(document).ready(function(){
+         
+            $('.card ').hover(function(){
+        
+            if($(this).find('.first').length)
+            {   
+                $(this).css('border-bottom' , '5px solid orange ');
+            }
+            if($(this).find('.second').length)
+            {   
+            
+                $(this).css('border-bottom' , '5px solid #0275d8 ');
+            }
+            
+            $(this).find('.second').css('padding-top' , '.5rem  ');
+            $(this).find('.first').css('padding-top' , '.5rem  ');
+            $(this).find('.second').css('padding-bottom' , '.8rem  ');
+            $(this).find('.first').css('padding-bottom' , '.8rem  ');
+            $(this).find('.first').show(200);
+            $(this).find('.second').show(200);
+
+       } ,
+        function(){
+            $(this).css('border-bottom' , 'none ');
+            $('.second').hide(100 );
+            $('.first').hide(100);
+        }); 
+     
+     });
+     
+     
+         </script>
+</body>
+
+</html>

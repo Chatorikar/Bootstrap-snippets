@@ -1,0 +1,221 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Snippet - BBBootstrap</title>
+                                <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+                                <style>body {
+    font: 300 18px/1.5 'Muli', sans-serif;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(138deg, #9FA8DA 60%, #3F51B5 60%);
+    overflow-x: hidden;
+    padding-bottom: 0 !important;
+    height: 100%;
+    position: relative
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.cc-number.identified {
+    background-repeat: no-repeat;
+    background-position-y: 11px;
+    background-position-x: 99%
+}
+
+.right-card {
+    border-top: 10px blue solid;
+    padding-top: 1rem;
+    width: fit-content
+}
+
+.btn-group >.btn,
+.btn  {
+    width: -webkit-fill-available
+}
+
+li.borderless {
+    border-top: 0 none !important;
+    font-size: 15px;
+    padding: 0;
+    padding-top: 5%
+}
+
+.fa-check {
+    color: rgb(0, 195, 255)
+}
+
+h1{
+  font-size:  calc(24px + (35 - 24) * ((100vw - 360px) / (1600 - 360))) !important ;
+}
+
+h3{
+  font-size:  calc(17px + (22 - 17) * ((100vw - 360px) / (1600 - 360))) !important ;
+}
+
+h6{
+  font-size:  calc(14px + (20 - 14) * ((100vw - 360px) / (1600 - 360))) !important ;
+}
+
+h5{
+  font-size:  calc(15px + (18   - 15) * ((100vw - 360px) / (1600 - 360))) !important ;
+}
+
+label{
+  font-size:  calc(13px + (16   - 13) * ((100vw - 360px) / (1600 - 360))) !important ;
+}
+
+p{
+  font-size:  calc(13px + (16 - 13) * ((100vw - 360px) / (1600 - 360))) !important ;
+}
+
+.checkbox {
+  font-size:  calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important ;
+}
+.card,
+.card-header,
+.card-footer {
+    background-color: white !important
+}
+
+.card-header {
+    border-bottom: none
+}
+
+.cursor-pointer {
+    cursor: pointer
+}
+
+.second-card,
+.first-card {
+    border-top: 1px solid #ccc !important;
+    padding-top: 2rem
+}
+
+.card-image {
+    width: 45px;
+    margin-top: -9px
+}
+.test{
+  position: relative;
+  top:calc(3px + (2 - 3) * ((100vw - 360px) / (1600 - 360))) !important ;
+}
+
+.form-control  {
+    height: calc(1em + 1rem + 2px);
+  }
+
+@media (max-width: 1000px) {
+    .card {
+        padding: 0 !important
+    }
+}</style>
+                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+                                <script type='text/javascript'></script>
+                            </head>
+                            <body>
+                            <div class="container my-container ">
+    <div class="card bg-white px-5 ">
+        <div class="card-header">
+            <div class="jumbotron mb-1 p-0 pt-3 mt-5 mx-2 bg-white ">
+                <h1 class="display-5 "><b>You'r almost there</b></h1>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row ">
+                <!-- Left Half -->
+                <div class="col-md-5 ">
+                    <div class="card mt-0 border-0 first-card">
+                        <!-- 1st Card -->
+                        <div class="card-body">
+                            <h5 class="card-title pb-4">1. Choose your billing cycle</h5>
+                            <div class="row">
+                                <div class="col-md-auto ">
+                                    <div class="custom-control custom-radio custom-control-inline "> <input id="customRadioInline1" type="radio" name="customRadioInline1" class="custom-control-input" checked="true"> <label for="customRadioInline1" class="custom-control-label label-radio">Bill Yearly</label> </div>
+                                    <p class="my-0"> $45.99 / year</p> <del class="text-success">
+                                        <p>$45.99 / year</p>
+                                    </del>
+                                </div>
+                                <div class="col-md-auto ">
+                                    <div class="custom-control custom-radio custom-control-inline "> <input id="customRadioInline2" type="radio" name="customRadioInline1" class="custom-control-input"> <label for="customRadioInline2" class="custom-control-label label-radio">Bill Monthly</label> </div>
+                                    <p> $19.99 / year</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-2 border-0 second-card">
+                        <!-- Form -->
+                        <div class="card-body">
+                            <h5 class="card-title pb-4">2. Enter Payment details</h5>
+                            <div class="row">
+                                <div class="col-md-auto col-sm-auto ">
+                                    <div class="custom-control custom-radio custom-control-inline "> <input id="customRadioInline11" type="radio" name="customRadioInline11" class="custom-control-input" checked="true"> <label for="customRadioInline11" class="custom-control-label label-radio"><img src="https://img.icons8.com/color/48/000000/visa.png" class="card-image"> </label> </div>
+                                </div>
+                                <div class="col-md-auto col-sm">
+                                    <div class="custom-control custom-radio custom-control-inline "> <input id="customRadioInline22" type="radio" name="customRadioInline11" class="custom-control-input"> <label for="customRadioInline22" class="custom-control-label label-radio"><img src="https://img.icons8.com/officel/48/000000/discover.png" class="card-image"></label> </div>
+                                </div>
+                            </div> <!-- Payment Form -->
+                            <form method="get" action="">
+                                <div class="form-group "> <label for="cc-number" class="control-label mt-3">Card number</label> <input id="cc-number" name="cc-number" type="tel" placeholder="xxxx-xxxx-xxxx-xxxx" class="form-control form-control  cc-number identified visa " value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number" autocomplete="cc-number"> </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6 col-sm-6"> <label for="cc-exp" class="control-label ">Expiration date</label> <input id="cc-exp" type="tel" class=" form-control form-control  cc-exp" autocomplete="cc-exp" placeholder="MM / YY" required> </div>
+                                    <div class="form-group col-md-6 col-sm-6"> <label for="cc-cvc" class="control-label ">CVV<span><i class="fa fa-info-circle px-2" aria-hidden="true"></i> </span> </label> <input id="cc-cvc" type="tel" class="form-control  form-control cc-cvc " autocomplete="off" placeholder="•••" required> </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-8 col-sm-6"> <label for="inputState">State</label> <select id="inputState" class="form-control form-control ">
+                                            <option selected>United State</option>
+                                            <option>India</option>
+                                            <option>UK</option>
+                                            <option>China</option>
+                                        </select> </div>
+                                    <div class="form-group col-md-4 col-sm-6"> <label for="inputZip">Zip</label> <input type="text" class="form-control form-control " id="inputZip" placeholder="111111"> </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 d-none d-sm-block"></div> <!-- Right Half -->
+                <div class="col-md-6">
+                    <div class="card right-card ">
+                        <div class="card-header ">
+                            <h3 class="font-weight mt-sm-2 mt-3"><b>BBBotstrap Professional</b></h3>
+                            <h6><b>Bilied Now : $45.99</b></h6>
+                        </div>
+                        <div class="card-body pt-0">
+                            <p class="card-text">Perfect Software Solution is a <span class="text-primary">professional software, website development</span> timely delivered and cost effective software,<span class="text-primary"> website development services</span>. We are highly experienced in offering offshore software development.</p>
+                            <div class="custom-control custom-checkbox checkbox  align-self-center"><input type="checkbox" class="custom-control-input" id="checkbox-2"><label class="custom-control-label" for="checkbox-2"><span class="test">I agree <span class="text-primary cursor-pointer"><u> BBBotstrap Terms</u></span> </span> </label> </div>
+                        </div>
+                        <div class="card-footer"> <button type="submit" class="btn btn-primary btn ">Buy now</button> </div>
+                    </div>
+                    <div class="card border-0">
+                        <div class="card-body p-0 py-5 px-3">
+                            <h4 class="card-title">What included in BBBotstrap Professional</h4>
+                            <div class="row ">
+                                <div class="col-md-6">
+                                    <ul class="list-group list-group-flush ">
+                                        <li class="list-group-item borderless"><i class="fa fa-check"></i> Strategic Consulting,</li>
+                                        <li class="list-group-item borderless"><i class="fa fa-check"></i> UI AND UX </li>
+                                        <li class="list-group-item borderless"><i class="fa fa-check"></i> Client Application</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <ul class="list-group list-group-flush p-0">
+                                        <li class="list-group-item borderless"><i class="fa fa-check"></i> E-Commerce</li>
+                                        <li class="list-group-item borderless"><i class="fa fa-check"></i> IT Consulting</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                            </body>
+                        </html>

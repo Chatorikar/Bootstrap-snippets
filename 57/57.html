@@ -1,0 +1,144 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Snippet - BBBootstrap</title>
+                                <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+                                <style> body {
+        font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
+     height: 100%;
+     position: relative;
+     background-color: #eee
+ }
+
+ .bg-black {
+     background: #ffffff
+ }
+
+ .default {
+     border-color: #e7e7e7
+ }
+
+ .default:hover {
+     background: #e7e7e7
+ }
+
+ h6{
+    font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
+
+ }
+
+ h5{
+    font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1600 - 320))) !important;
+
+ }
+
+ .btn {
+     padding: calc(8px + (10 - 8) * ((100vw - 320px) / (1600 - 320))) calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 320))) !important;
+     font-size: calc(13px + (15 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
+     cursor: pointer
+ }
+
+ .default {
+     border: 2px solid black;
+     border-color: #e7e7e7
+ }
+
+ .modal {
+    background-image: radial-gradient(circle 919px at 1.7% 6.1%, rgba(41, 58, 76, 1) 0%, rgb(11, 19, 22) 100.2%)
+}
+
+ .default:hover {
+     background: #e7e7e7;
+     color: black
+ }
+
+ .my-btn {
+     margin: 23%
+ }
+
+ .example-block {
+     transition: background 0.4s ease-out;
+     position: relative;
+     display: inline-block;
+     height: auto
+ }
+
+ img{
+     height:auto;
+     width: calc(18px + (25 - 18) * ((100vw - 320px) / (1600 - 320))) !important;
+
+ }
+
+ .example-block:hover {
+     cursor: pointer;
+     animation: levitate 1s ease-in-out infinite
+ }
+
+ @keyframes levitate {
+     0% {
+         transform: translate(0, 0px);
+         box-shadow: 0 27px 30px -15px rgba(21, 173, 250, 0.6)
+     }
+
+     50% {
+         transform: translate(0, -9px);
+         box-shadow: 0 36px 30px -15px rgba(21, 173, 250, 0.3)
+     }
+
+     100% {
+         transform: translate(0, 0px);
+         box-shadow: 0 27px 30px -15px rgba(21, 173, 250, 0.6)
+     }
+ }
+
+ .example-block .image {
+     transition: ease-in-out, transform 0.4s ease-in-out
+ }
+
+ .example-block:hover .image {
+     transform: scale(1.8)
+ }</style>
+                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+                                <script type='text/javascript'></script>
+                            </head>
+                            <body>
+                            <div class="container px-sm-auto ">
+    <!-- Button trigger modal -->
+    <div class="row my-btn">
+        <div class="col text-center "> <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modelId"> Launch</button> </div>
+    </div> <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered px-3" role="document">
+            <div class="modal-content">
+                <div class="modal-header hoverImages">
+                    <h5 class="modal-title"><strong> We remind you </strong></h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body px-4 mt-3">
+                    <div class="row">
+                        <div class="col-auto px-md-3 example-block"><img class="image" src="https://i.imgur.com/q3Q5A5e.gif" alt="Smiling Face With Heart-Eyes" title="Smiling Face With Heart-Eyes" width="34" height="34"></div>
+                        <div class="col-auto px-md-3 example-block"><img class="image" src="https://i.imgur.com/v4eoLxA.png" alt="Eyes" title="Eyes" width="24" height="24"></div>
+                        <div class="col-auto px-md-3 example-block"><img class="image" src="https://i.imgur.com/RVyqzqU.png" alt="Thinking Face" title="Thinking Face" width="24" height="24"></div>
+                        <div class="col-auto px-md-3 example-block"><img class="kg-image image" src="https://i.imgur.com/EPxyW4M.gif" width="24" height="24"></div>
+                        <div class="col-auto px-md-3 example-block"><img class="image" src="https://i.imgur.com/q3Q5A5e.gif" alt="Smiling Face With Heart-Eyes" title="Smiling Face With Heart-Eyes" width="34" height="34"></div>
+                        <div class="col-auto d-sm-block d-none px-md-3 example-block"><img class="image" src="https://i.imgur.com/ONLx0Eu.png" alt="Bell" title="Bell" width="24" height="24"></div>
+                        <div class="col-auto d-sm-block d-none px-md-3 example-block"><img class="image" src="https://i.imgur.com/v4eoLxA.png" alt="Eyes" title="Eyes" width="24" height="24"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="font-weight-bold mt-3">Stay in touch with your business at all times.</h5>
+                            <h6 class="text-muted fs-14">Sign up for updates to ensure thatyou don't miss the next promotion and other important events in Personal Account </h6>
+                            <h6><span><i class="fa fa-info-circle text-muted" aria-hidden="true"></i> </span> <small class="text-muted">To do this you need to allow notifications in your browser</small></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-lg bg-danger text-white " data-dismiss="modal" data-wow-delay="0.7s"><small>Ok , Notify me</small></button> <button type="button" class="btn btn-lg bg-red default text-info " data-wow-delay="0.7s"><small>Next time</small></button> </div>
+            </div>
+        </div>
+    </div>
+</div>
+                            </body>
+                        </html>

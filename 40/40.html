@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - BBBootstrap</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <style>
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    min-height: 85vh;
+    background: linear-gradient(110deg, rgb(94, 91, 91) 60%,rgb(165, 165, 165)  60%) no-repeat;                        
+}
+
+.container{
+    margin-top: calc(100px + (150 - 100) * ((100vw - 360px) / (1600 - 300)))  !important;
+    margin-bottom: calc(100px + (150 - 100) * ((100vw - 360px) / (1600 - 300)))  !important;
+}
+
+p{
+    font-size: calc(12px + (13 - 12) * ((100vw - 360px) / (1600 - 300))) !important;
+}
+
+
+button:focus {
+    box-shadow: none !important;
+    outline-width: 0;
+}
+
+.card{
+    background:#222222;
+    border-radius:11px !important;
+    width: calc(280px + 10 * ((100vw - 320px) / 680)) ;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5) ;
+}
+
+.card-header{
+    border:0;
+    border-radius:11px !important;
+    
+}
+
+.btn-success{
+    border-radius: 20px !important;
+    background-color: #9BEAC0 !important;
+
+}
+
+.btn-success:hover{
+    background-color: #9BEAC0 !important;
+}
+
+
+.card-header{
+    background:#222222 !important;
+    position: relative;
+}
+
+img{
+    width: 100px !important;
+}
+
+.card-body{
+    border-radius: 9px !important;
+}
+
+.card-1{
+    color: #A4EAC0 !important;
+}
+
+.card-2{
+    color: #FF97B7;
+}
+
+.cross{
+    cursor: pointer;
+    width: 45px !important;
+    z-index: 1 !important;
+}
+
+.imp{
+    color: #FF97B7;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.try{
+    background-color: #FF97B7 !important;
+    border: 0;
+}
+
+.try:hover{
+    background-color: #FF97B7 !important;
+}
+    </style>
+
+</head>
+
+<body>
+<div class="container d-flex justify-content-center ">
+    <div class="row d-flex justify-content-center ">
+        <div class="col">
+            <div class="card-deck">
+                <div class="card border-0 justify-content-center"> 
+                    <div class="card-header pb-0 bg-white text-center" >  
+                        <div class="row mb-0 justify-content-end"><div class="col-3"><img class="img-fluid cross  mb-auto" src="https://i.imgur.com/YFpQ0hW.jpg"></div></div>  
+                        <div class="row mt-0"><div class="col"><img class="img-fluid text-center" src="https://i.imgur.com/kmvY5wU.jpg"></div></div>
+                    </div>
+                    <div class="card-body text-center px-lg-5 px-md-4 mb-3"><h6 class="card-title card-1 font-weight-bold">Successful detection</h6><p class="text-light">Fingerprint read successfully,click continue to perform your action</p>
+                        <div class="row justify-content-center mt-4"><div class="col-8"><button type="button" class="btn btn-success btn-block font-weight-bold text-dark mt-3">Continue</button></div></div>
+                    </div>
+                </div>
+                <div class="card border-0 justify-content-center "> 
+                    <div class="card-header pb-0 bg-white text-center" >  
+                        <div class="row mb-0 justify-content-end"><div class="col-3"><img class="img-fluid cross  mb-auto" src="https://i.imgur.com/YFpQ0hW.jpg"></div></div>  
+                        <div class="row mt-0"><div class="col"><img class="img-fluid text-center" src="https://i.imgur.com/mrLvCJy.jpg"></div></div>
+                    </div>
+                    <div class="card-body text-center px-md-5 mb-3 text-light"><h6 class="card-title card-2 font-weight-bold"> Dectection error</h6><p class="mb-0">Please try again, if problem persists, please contact us.</p><p><span class="imp">Important</span>, try a maximum of 3 times !  </p>   
+                        <div class="row justify-content-center mt-4"><div class="col-10"><button type="button" class="btn btn-success btn-block font-weight-bold text-dark try">Try again</button></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+</body>
+
+</html>

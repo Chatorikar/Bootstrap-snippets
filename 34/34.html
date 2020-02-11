@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - BBBootstrap</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <style>
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+body {
+    background:#eee ;
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(0deg, #fff, 50%, #edffad);
+    background-repeat: no-repeat
+}
+
+.container{
+    margin-top: 250px !important;
+}
+img{
+    height: auto;
+    width: calc(130px + (180 - 130) * ((100vw - 320px) / (1600 - 320))) !important;
+}
+h3{
+    color: #9E9E9E;
+    font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1600 - 320))) !important;
+}
+
+p{
+    font-size: calc(11px + (17 - 11) * ((100vw - 320px) / (1600 - 320))) !important;
+}
+
+
+button:focus {
+    box-shadow: none !important;
+    outline-width: 0;
+}
+
+.card{
+    border-radius:0;
+    width: calc(600px + 10 * ((100vw - 320px) / 680)) ;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5) ;
+    border-top-color: #F9E8C7 !important;
+    padding-left: 0 !;
+}
+
+img{
+    width: 180px ;
+}
+
+.btn-primary{
+    background:#04A79C;
+    color: #fff !important;
+    border-radius:0 !important;
+    padding-top: calc(5px + 6 * ((100vw - 320px) / 680)) ;
+    padding-bottom: calc(5px + 6 * ((100vw - 320px) / 680));
+    border: 0px ;
+
+}
+
+.btn-primary:hover{
+    background:#04A79C;
+}
+.btn-primary:focus{
+    background:#04A79C !important;
+}
+
+small{
+    letter-spacing: 2px;
+}
+
+.touch{
+    color:#04A79C;
+    cursor: pointer;
+}
+
+.plan{
+    text-align: center !important;
+    vertical-align: middle !important;
+    font-size:calc(8px + 3 * ((100vw - 320px) / 680));
+}
+
+.btn-inverse {
+    border: 1px solid #aaaa;
+    background-color: transparent;
+    border-radius:0;
+    letter-spacing: 1px;
+    padding-top: calc(5px + 6 * ((100vw - 320px) / 680)) ;
+    padding-bottom: calc(5px + 6 * ((100vw - 320px) / 680));
+}
+
+.btn-inverse:hover {
+    background-color: #04A79C;
+    color: #fff !important;
+}
+
+@media (max-width: 726px) {
+    .card{
+        width: unset;
+    } 
+}
+
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container d-flex justify-content-center">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#my-modal">Need a Help</button>
+        <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered justify-content-center " role="document">
+                <div class="modal-content  border-0 mx-3">   
+                    <div class="modal-body  p-0">
+                        <div class="card text-center">
+                            <div class="card-header pb-0 bg-white border-0"><div class="row"><div class="col ml-auto"><button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button></div> </div><img src="https://i.imgur.com/vHkq1Gb.jpg" class="img-fluid mt-sm-5 mt-3" /> <h3>Your trial has ended </h3></div>
+                            <div class="card-body px-sm-5 mb-sm-5 mb-3">
+                                <p class="text-muted mb-0">To edit and access your account,you'll nedd to extend your trial or subscribe to plan. Your Qwilr Pages can still be viewed publicly.</p><p class="text-muted "> Have questions ? <span class="touch"> Get in touch </span></p>    
+                                <div class="row justify-content-center mt-4 px-sm-5  ">
+                                    <div class="col"><button type="submit" class="btn btn-inverse btn-block  font-weight-bold text-dark text-uppercase" data-dismiss="modal"><span class="plan">browse plan</span></button></div>
+                                    <div class="col"><button type="button" class="btn btn-primary btn-block  text-dark font-weight-bold text-uppercase" data-dismiss="modal"><span class="plan">extend my trial</span></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+</body>
+
+</html>

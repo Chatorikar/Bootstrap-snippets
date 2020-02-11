@@ -1,0 +1,139 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Snippet - BBBootstrap</title>
+                                <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+                                <style> body {
+     background-color: #D1C4E9;
+     background-repeat: no-repeat
+ }
+
+ .container {
+     margin-top: 250px
+ }
+
+ body , html{
+    background: linear-gradient(to left, #ffffff, #f79494);
+}
+
+
+ .first ol {
+     background-color: rgb(63, 53, 65) !important
+ }
+
+ .first a:hover {
+     color: #ffffff !important
+ }
+
+ .active-1 {
+     color: #ffffff !important
+ }
+
+ .breadcrumb>li+li:before {
+     content: "" !important
+ }
+
+ .breadcrumb {
+     padding: 19px;
+     font-size: 14px;
+     color: #aaa !important;
+     letter-spacing: 2px;
+     border-radius: 5px !important;
+     box-shadow:3px 10px 10px rgba(0, 0, 0, 0.5) !important;
+ }
+
+ .fa,
+ i {
+     color: rgb(0, 183, 255) !important;
+     font-size: 10px
+ }
+
+
+ a {
+     text-decoration: none !important;
+     color: #aaa !important
+ }
+
+ a:focus,
+ a:active {
+     outline: none !important;
+     box-shadow: none !important
+ }
+
+ .fa-caret-right {
+     vertical-align: middle;
+     font-size: 20px !important
+ }
+
+
+ .first{
+    transform: translate(25% ,60%) ;
+}
+
+
+
+ @media (max-width: 767px) {
+     .breadcrumb {
+         font-size: 10px
+     }
+
+     .breadcrumb-item+.breadcrumb-item {
+         padding-left: 0
+     }
+
+     .fa {
+         font-size: 9px !important
+     }
+
+     .breadcrumb {
+         letter-spacing: 1px !important
+     }
+
+     .fa-caret-right:before {
+         content: "\f0da";
+         vertical-align: super !important
+     }
+
+
+ .first{
+    transform: translate(0% ,-30%) ;
+}
+ }
+
+</style>
+                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+                                <script type='text/javascript'>  $(document).ready(function () {
+
+
+  $('.first ol li a').click(function () {
+  $('.first ol li a.active-1').removeClass('active-1');
+  $(this).closest('a').addClass('active-1');
+  });
+
+
+
+  });</script>
+                            </head>
+                            <body>
+                            <div class="container container-md-fluid">
+    <div class="row justify-content-center">
+        <div class="col-auto col-md-10 d-flex">
+            <div class="bc-icons-2 ">
+                <nav aria-label="breadcrumb " class="first">
+                    <ol class="breadcrumb indigo lighten-6 first shadow-lg mb-5 bg-dark navbar-light mb-5 px-md-4">
+                        <li class="breadcrumb-item font-weight-bold font-italic"><a class="black-text text-uppercase active-1" href="#"><span class="mr-md-3 mr-2">home</span></a><i class="fa fa-caret-right " aria-hidden="true"></i></li>
+                        <li class="breadcrumb-item font-weight-bold font-italic"><a class="black-text text-uppercase" href="#"><span class="mr-md-3 mr-2">epayments</span></a><i class="fa fa-caret-right text-uppercase " aria-hidden="true"></i></li>
+                        <li class="breadcrumb-item font-weight-bold font-italic "><a class="black-text text-uppercase " href="#"><span class="mr-md-3 mr-2">offers</span></a><i class="fa fa-caret-right text-uppercase " aria-hidden="true"></i></li>
+                        <li class="breadcrumb-item font-weight-bold font-italic "><a class="black-text text-uppercase " href="#"><span>login</span></a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+                            </body>
+                        </html>

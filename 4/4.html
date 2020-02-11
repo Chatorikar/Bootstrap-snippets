@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+<!-- 
+<link rel="stylesheet" href="3.css"> -->
+<style>
+body {
+    font: 300 18px/1.5 'Rubik', sans-serif;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .my-btn{
+    margin:33%
+  }
+
+  img{
+      width:  calc(55px + (75 - 55) * ((100vw - 360px) / (1600 - 360))) !important  ;
+      height: auto;
+  }
+   
+
+
+  .example-block {
+    transition: background 0.4s ease-out;
+    position: relative;
+    display: inline-block;
+    height: auto;
+  }
+  .example-block:hover {
+    cursor: pointer;
+    animation: levitate 1s ease-in-out infinite;
+  }
+  
+  @keyframes levitate {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, -9px);
+    }
+    100% {
+      transform: translate(0, 0px);
+    }
+  }
+  
+  .example-block .image {
+    transition:  ease-in-out, transform 0.4s ease-in-   out;
+  }
+  .example-block:hover .image {
+    transform: scale(1.8);
+  }
+  h6{
+    font-size:  calc(14px + (17 - 14) * ((100vw - 360px) / (1600 - 360))) !important ;
+  }
+
+  h5{
+    font-size:  calc(19px + (23 - 19) * ((100vw - 360px) / (1600 - 360))) !important ;
+  }
+
+.input-hidden {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  input[type=radio]:checked + label>img {
+    animation: levitate 0.5s ease-in-out infinite;
+    transform: scale(2.0);
+  }
+  
+
+  input[type=radio] + label>img {  
+    transition: 500ms all;
+  }
+
+ .modal-footer{
+     background-color: rgb(238, 238, 238);
+ }
+
+ .test{
+    position: relative;
+    top:calc(3px + (0 - 3) * ((100vw - 360px) / (1600 - 360))) !important ;
+  }
+
+ label{
+    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 30))) !important;
+ }
+
+ button{
+    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 30))) !important;
+    border-radius: 0 !important;
+    background-color:transparent !important;
+    color:rgb(75, 59, 219) !important;
+}
+
+
+</style>
+</head>
+<body>
+
+        <div class="container">
+            <!-- Button trigger modal -->
+               <div class="row my-btn">
+                   <div class="col text-center ">
+                        <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modelId"> Launch</button>      
+                   </div>
+               </div>
+            
+                <!-- Modal -->
+                <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">   
+                            <div class="modal-body p-0 mt-3">
+                                
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <p><h5  class="font-weight-bold">How'd stream go?</h5></p>
+                                            <p class="text-muted "><h6>Tell us about stream watching experience </h6></p>
+                                    </div>  
+                                </div>
+
+                                <div class="row justify-content-center">            
+                                      <div class="col-auto  example-block text-center"><label class="radio-inline"> <input type="radio" name="emotion" id="sad" class="input-hidden" /><label for="sad"><img src="https://img.icons8.com/color/48/000000/boring.png" width="84" height="84" ></label></div>
+                                      <div class="col-auto  example-block text-center"><label class="radio-inline"> <input type="radio" name="emotion" id="happy" class="input-hidden" /><label for="happy"><img src="https://img.icons8.com/color/48/000000/bored.png"  width="84" height="84"></div>
+                                      <div class="col-auto  example-block text-center"><label class="radio-inline"> <input type="radio" name="emotion" id="exicetd" class="input-hidden" /><label for="exicetd"><img src="https://img.icons8.com/color/48/000000/smiling.png "  width="84" height="84"></div>
+                                </div>
+                             </div>
+                        <div class="modal-footer justify-content-between">
+                            <div class="custom-control custom-checkbox checkbox-lg space"><input type="checkbox" class="custom-control-input" id="checkbox-2"><label class="custom-control-label" for="checkbox-2"> <span class="test">Dont' show this again</span> </label> </div>                                    
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+
+</html>
+

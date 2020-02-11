@@ -1,0 +1,131 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Snippet - BBBootstrap</title>
+                                <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+                                <style> .container {
+     margin-top: 250px
+ }
+
+ body {
+     background-color: #eee
+ }
+
+ .demo {
+     background-color: rgb(168, 200, 245)
+ }
+
+ .pagination-outer {
+     text-align: center
+ }
+
+ .pagination {
+     background-color: #fff;
+     border-radius: 25px !important;
+     overflow: hidden;
+     border: none !important
+ }
+
+ a:focus,
+ a:active {
+     outline: none !important;
+     box-shadow: none !important
+ }
+
+ .fa {
+     font-size: 11px;
+     vertical-align: middle !important;
+     color: black
+ }
+
+ .pagination li.active .fa {
+     color: #fff !important
+ }
+
+ .pagination li a.page-link {
+     color: #505050;
+     background-color: transparent;
+     font-size: 17px;
+     font-weight: 600;
+     padding: 17px 25px;
+     border: none;
+     transition: all 0.3s ease 0s
+ }
+
+ .fa-home {
+     transform: scale(1.4, 1.4)
+ }
+
+ .pagination li:last-child a.page-link {
+     border: none
+ }
+
+ .pagination li.active a.page-link,
+ .pagination li a.page-link:hover,
+ .pagination li.active a.page-link:hover {
+     background-color: transparent
+ }
+
+ .pagination li a.page-link:after {
+     content: '';
+     background-color: #42A5F5 !important;
+     height: 100%;
+     width: 100%;
+     transform: scaleY(0);
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     z-index: -1;
+     transition: all 0.3s
+ }
+
+ .pagination li.active a.page-link:after,
+ .pagination li a.page-link:hover:after,
+ .pagination li.active a.page-link:hover:after {
+     transform: scaleY(1);
+     border-radius: 25px !important
+ }
+
+ @media (max-width: 767px) {
+     .pagination li a.page-link {
+         padding: 11px 8px !important
+     }
+
+     .fa {
+         font-size: 9px !important
+     }
+
+     li a {
+         font-size: 12px !important
+     }
+
+     .page-item+.page-item {
+         padding-left: 0 !important
+     }
+ }</style>
+                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+                                <script type='text/javascript'>$(document).ready(function(){
+
+$('ul li a').click(function() {
+$('ul li.active').removeClass('active');
+$(this).closest('li').addClass('active');
+});
+
+});</script>
+                            </head>
+                            <body>
+                            <div class=" container d-flex justify-content-center">
+    <ul class="pagination shadow-lg">
+        <li class="page-item "><a class="page-link" href="#"><i class="fa fa-home "></i> <small>Home</small> </a></li>
+        <li class="page-item "><a class="page-link " href="#"><i class="fa fa-file mr-1 ml-0"></i><small>Files &nbsp; </small></a></li>
+        <li class="page-item "><a class="page-link" href="#"><i class="fa fa-image mr-1"></i><small>Image</small></a></li>
+        <li class="page-item "><a class="page-link" href="#"><i class="fa fa-video-camera mr-1"></i><small>Videos</small></a></li>
+        <li class="page-item active "><a class="page-link " href="#"><i class="fa fa-music mr-1 "></i><small>Music</small></a></li>
+    </ul>
+</div>
+                            </body>
+                        </html>

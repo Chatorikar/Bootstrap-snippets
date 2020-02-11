@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - BBBootstrap</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <style>
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(180deg, rgb(240, 167, 253), rgb(255, 255, 255));
+    background-repeat:no-repeat;
+}
+.modal {
+    background-image: linear-gradient(rgb(177, 133, 248) 0%, rgb(255, 255, 255) 100.2%);
+}
+.container{
+    margin-top: 250px !important;
+}
+
+p{
+    color: #9E9E9E;
+    font-size: calc(13px + (16 - 13) * ((100vw - 360px) / (1600 - 360))) !important;
+}
+
+button:focus {
+    box-shadow: none !important;
+    outline-width: 0;
+}
+
+.card{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8) ;
+}
+
+.card-header{
+    background-color :#B182C6 !important;
+    color: #fff;
+}
+
+img{
+    width: 180px !important;
+}
+
+.btn-success{
+    border: 1px solid #B52AB4;
+    border-radius: 20px !important;
+}
+
+.btn-success:hover{
+    background:	#B52AB4;
+    color:#fff !important;
+    border-color: 	#B52AB4 !important;
+}
+.btn-success:focus{
+    background:	#B52AB4 !important;
+    color:#fff !important;
+}
+
+.btn-success{
+    background:	#B52AB4 !important;
+
+}
+.email{
+    color: #B52AB4;
+    cursor: pointer;
+}
+.fa-question-circle{
+    vertical-align: middle !important;
+    cursor: pointer !important;
+}
+
+.close-icon{
+    color:#fff !important;
+}
+
+
+.close span{
+    color: #fff !important;
+    font-size: 30px !important;
+}
+p{
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320))) !important;
+
+}
+
+img{
+    width: calc(120px + (200 - 120) * ((100vw - 320px) / (1600 - 320))) !important;;
+}
+
+
+.btn-primary {
+    display: inline-block;
+    margin-right: 20px;
+    letter-spacing: 1px;
+    border-radius: 0px !important;
+    border: 1px solid transparent;
+}
+
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+<div class="container d-flex justify-content-center">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#my-modal">Need a Help</button>
+        <div id="my-modal" class="modal fade px-0" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered justify-content-center " role="document">
+                <div class="modal-content  border-0 mx-3">   
+                    <div class="modal-body  p-0">
+                        <div class="card border-0 ">
+                            <div class="card-header pb-0 bg-white border-0 text-center px-sm-4"><h6 class="text-left mt-4 font-weight-bold mb-0"><span><i class="fa fa-question-circle fa-2x mr-3 " aria-hidden="true"></i> </span > Need a hand <span ><button type="button" class="close text-left my-auto" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button></span></h6> <span class="img-1 text-center"><img src="https://i.imgur.com/ANi8tLK.png" class="img-fluid mt-3 mb-4" /></span> </div>
+                            <div class="card-body px-sm-4 mb-3"><p class="text-muted"> If you've forgotten your login details we're here to help Mon-Fri 8am-8pm   </p><p class="text-muted"> Send us an <span class="email">email</span> or give us call on <b>0800 002 9242</b>  </p>
+                                <div class="row justify-content-end mt-4 "><div class="col-auto"><button type="button" class="btn btn-success px-5 " data-dismiss="modal">OK</button></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+</body>
+
+</html>

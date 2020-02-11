@@ -1,0 +1,353 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Snippet - BBBootstrap</title>
+                                <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='' rel='stylesheet'>
+                                <style>body {
+    background: linear-gradient(to right, #e7f8a9, #f7667e);
+}
+
+.test{
+    margin-top:calc(150px + (100 - 150) * ((100vw - 320px) / (1600 - 320))) !important;
+}
+
+input{
+    font-size:calc(13px + (15 - 13) * ((100vw - 320px) / (1600 - 320))) !important;
+
+}
+
+span{
+    font-size:calc(12px + (14 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
+
+}
+
+
+
+.card{
+    border: none !important;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.8) !important;
+}
+
+.img-icon {
+    object-fit: cover;
+    object-position: center;
+    height: 85%
+}
+
+img {
+    vertical-align: text-top
+}
+
+span {
+    font-size: smaller
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between
+}
+
+.brand-name {
+    padding-left: 4px !important
+}
+
+#fire {
+    height: 15px !important
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #4527A0 !important
+}
+
+.card-header,
+.card-body,
+.card-footer {
+    background-color: white !important;
+    border: none !important
+}
+
+.btn-lg {
+    width: -webkit-fill-available;
+    background-color: #4527A0 !important;
+    border-radius: 0px !important;
+    font-size: smaller !important
+}
+
+h6 {
+    font-size: 14px !important
+}
+
+.btn-outline-primary:hover {
+    background-color: #4527A0 !important
+}
+
+.form-check-input {
+    display: none
+}
+
+.btn-outline-primary {
+    padding: .2rem .75rem !important;
+    font-size: x-small !important;
+    border-radius: 25px !important
+}
+
+input[type=checkbox]:checked+#checkbox-lable {
+    color: rgb(255, 255, 255);
+    background-color: #4527A0 !important
+}
+
+.float-label-control input:focus {
+    box-shadow: none;
+    border-bottom-width: 2px;
+    padding-bottom: 0
+}
+
+.float-label-control input {
+    padding: 0.1em 0em 1px 0em;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #ccc !important
+}
+
+#second {
+    display: none
+}
+
+.btn-info {
+    background-color: white !important
+}
+
+#parent-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: calc(25px + (35 - 25) * ((100vw - 320px) / (1600 - 320))) !important;
+}
+
+#child-card {
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#my-button {
+    z-index: 1;
+    margin-top: -14px;
+    background-color: rgb(255, 255, 255) !important;
+    width: 60px;
+    height: 25px;
+    font-size: small !important;
+    border: 1px solid grey !important;
+    padding: 0rem .75rem
+}
+
+.cross {
+    opacity: 0.5 !important;
+    cursor: pointer
+}
+
+#my-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: #4527A0 !important
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important
+}
+
+.progress {
+    border-radius: 10px !important;
+    height: 20px !important
+}
+
+.progress-bar {
+    background-color: #4527A0 !important
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 50px !important
+}
+
+#myBar {
+    width: 10%;
+    height: 15px;
+    background-color: #4527A0;
+    color: white;
+    border-radius: 50px
+}
+
+.acheievments::before {
+    width: fit-content !important
+}
+
+.acheievments {
+    background-color: rgb(255, 248, 255) !important;
+    column-fill: balance;
+    width: -webkit-fill-available !important
+}
+
+.small-card {
+    padding: 0.75rem 2.60rem !important
+}
+
+.alert {
+    padding: 0.5rem !important;
+    height: 55%;
+    padding-bottom: 1rem !important
+}
+
+.alert-warning {
+    background-color: rgb(255, 251, 222) !important;
+    border: none !important;
+    margin-bottom: auto !important
+}
+
+p{
+    font-size:calc(10px + (14 - 10) * ((100vw - 320px) / (1600 - 320))) !important;
+
+}
+</style>
+                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+                                <script type='text/javascript'>$(document).ready(function () {
+
+$("#next").click(function () {
+$("#first").hide();
+$("#third").hide();
+$("#second").show();
+});
+});
+
+var i = 0;
+function move() {
+if (i == 0) {
+i = 1;
+var elem = document.getElementById("myBar");
+var time_comp = document.getElementById("x");
+var width = 1;
+var y = 0;
+var z = 3;
+var id = setInterval(frame, 50);
+
+function frame() {
+if (width >= 100) {
+clearInterval(id);
+i = 0;
+} else {
+width++;
+elem.style.width = width + "%";
+if (width % 25 > 23) {
+y = width % 100;
+time_comp.innerHTML = z;
+z--;
+
+}
+
+}
+}
+}
+}</script>
+                            </head>
+                            <body>
+                            <div class="container ">
+    <div class="row  test mx-2">
+        <div class="card mx-auto border-0 shadow-lg mt-5 mb-5 ">
+            <div class="card-header mb-0 px-3 pb-0">
+                <div class="media">
+                    <div class="media-body pt-4">
+                        <div class="row ">
+                            <div class="col-auto pr-0"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1572936310/Pra/letter-b-icon-13-256.png" alt="icon" width="60" height="65" class="img-icon"> </div>
+                            <div class="col-auto ">
+                                <p class="font-weight-bold mb-0">BBBootstrap Team</p>
+                                <p class="small mb-0">Front End Developers</p> <small class="text-muted ">Entrepreneur</small>
+                            </div>
+                        </div>
+                        <h6 class="mt-2">+91-xxxxxxxxx</h6>
+                    </div>
+                </div>
+                <div class="d-flex row justify-content-between acheievments mt-2 mb-3 ">
+                    <div class=" col-md-auto py-2 "> <span><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1572936337/Pra/icon-medal.svg" alt="Verified" height="14" width="14"> Verified Listing</span> </div>
+                    <div class=" col-md-auto py-2"> <span><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1572936360/Pra/572-5720452_make-a-plan-icon-png-download-make-a.jpg" alt="Verified" height="14" width="14"> Real Photos</span> </div>
+                    <div class=" col-md-auto py-2 "> <span><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1572936381/Pra/34-512.png" alt="Verified" height="14" width="14"> Verified Snippets</span> </div>
+                </div>
+                <section id="third">
+                    <div class="row">
+                        <div class="col py-0">
+                            <div class=" alert alert-warning justify-content-center " role="alert">
+                                <div class="d-flex justify-content-center "> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1572936419/Pra/fire_1f525.png" width="17" id="fire"> &nbsp; <p class="text-muted my-p">121 peoples visited this webisite recently</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section id="first">
+                <div class="card-body mt-0 py-0 ">
+                    <div class="row ">
+                        <div class="col">
+                            <form role="form">
+                                <div class="form-group float-label-control "><input type="text" class="form-control " placeholder="Name"> </div>
+                                <div class="form-group float-label-control "><input type="text" class="form-control" placeholder="Phone"></div>
+                                <div class="form-group float-label-control "><input type="email" class="form-control" placeholder="Email Address "> </div>
+                            </form>
+                        </div>
+                    </div>
+                    <h6> I would like to know more about</h6>
+                    <form class="" method="get" action="">
+                        <div class="form-check form-check-inline"> <input type="checkbox" class="form-check-input" checked="checked" id="defaultInline1"><label id="checkbox-lable" class="btn btn-outline-primary btn-rounded small " for="defaultInline1">2 BHK</label> </div>
+                        <div class="form-check form-check-inline"> <input type="checkbox" class="form-check-input" id="defaultInline2"> <label id="checkbox-lable" class="btn btn-outline-primary btn-rounded small" for="defaultInline2">3BHK</label></div>
+                        <div class="form-check form-check-inline"> <input type="checkbox" class="form-check-input" id="defaultInline3"> <label id="checkbox-lable" class="btn btn-outline-primary btn-rounded small" for="defaultInline3">4 BHK</label></div>
+                    </form>
+                </div>
+                <div class="card-footer"> <button type="button" class="btn btn-primary btn-lg mb-2 " id="next" onclick="move()">Get contact details</button>
+                    <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input " checked="checked" id="customCheck4"><label class="custom-control-label text-muted small" for="customCheck4">Allow other seller to get in touch </label></div>
+                    <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck5"> <label class="custom-control-label text-muted small" for="customCheck5">I am interested in Web development</label></div>
+                </div>
+            </section>
+            <section id="second">
+                <div class="card-body text-center mb-2 nt-5" id="parent-card">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body small-card"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1572936310/Pra/letter-b-icon-13-256.png" class=" rounded-circle img-fluid mb-2 " width="60" height="60" alt="...">
+                                    <h6 class="card-title">BBBootstrap Team</h6>
+                                    <p class="card-subtitle text-muted mb-1 small">BBBootstrap@gmail.com</p>
+                                    <h6 class=" mb-2">8888888888</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <button type="button" class="btn btn-outline-primary text-center" id="my-button"> <span class="pb-5"><b>Edit</b></span> </button>
+                </div>
+                <div class="card-footer mx-auto p-0">
+                    <div class="row justify-content-center">
+                        <div class="col-7 mt-1 px-4">
+                            <div id="myProgress">
+                                <div id="myBar"></div>
+                            </div>
+                        </div>
+                        <div class="col-auto text-muted pl-0"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1572936562/Pra/149147.svg" width="25" height="25" alt="Error free icon" class="cross"> </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-8">
+                            <h6 class="font-weight-bold mb-0"> Contacting in <span id="x">4</span>s </h6>
+                            <p class="small text-muted mt-0 mb-5 ">Sending details to BBBootstrap Team </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+                            </body>
+                        </html>

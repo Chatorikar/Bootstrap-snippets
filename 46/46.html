@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - BBBootstrap</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <style>
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+body {
+    min-height: 81vh;
+    background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
+    font-family: 'Rubik', sans-serif;
+    background-repeat:no-repeat;
+}
+
+.container{
+    margin-top: 170px
+}
+
+.card{
+    border-radius:0 ;
+}
+
+.modal-content{
+    width: calc(290px + 10 * ((100vw - 320px) / 680)) !important;
+}
+
+.modal {
+    background-image: radial-gradient(circle 919px at 1.7% 6.1%, rgb(198, 198, 207) 0%, rgb(133, 208, 240) 100.2%)
+}
+
+.modal-content{
+    background: transparent !important;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8) ;
+   
+}
+
+.cross{
+    font-size: 25px !important;
+    cursor: pointer;
+}
+
+img{
+    width: 190px !important;
+    transition: 0.5s;
+}
+
+img:hover{
+    transform: scale(1.2);
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+
+.btn-primary {
+     background: #04A79C;
+     color: #fff !important;
+     border-radius: 0 !important;
+     border: 0px
+ }
+
+.btn-primary:hover {
+     background: #04A79C
+ }
+
+ .btn-primary:focus {
+     background: #04A79C !important
+ }
+
+    </style>
+
+</head>
+
+<body>
+<div class="container d-flex justify-content-center">
+<button class="btn btn-primary" data-toggle="modal" data-target="#my-modal">View Chart</button>
+    <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered justify-content-center " role="document">
+            <div class="modal-content  border-0 mx-sm-3 mx-1">   
+                <div class="modal-body  p-0">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header border-0 bg-white"><div class="row"><div class="col text-right"><button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="cross" aria-hidden="true">&times;</span> </button></div></div></div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col"> <figure class="figure"><img class="figure-img img-fluid mb-0  " src="https://i.imgur.com/JI7bnn1.jpg"><figcaption class="figure-caption text-center">Bars</figcaption></figure></div>
+                                        <div class="col"> <figure class="figure"><img class="figure-img img-fluid mb-0  " src="https://i.imgur.com/ZhTH3gl.jpg"><figcaption class="figure-caption text-center">Curves</figcaption></figure></div>
+                                        <div class="col"> <figure class="figure"><img class="figure-img img-fluid mb-0  " src="https://i.imgur.com/P4ifHGp.jpg"><figcaption class="figure-caption text-center">Pie</figcaption></figure></div>
+                                    </div>
+                                    <div class="row text-center mt-3 mb-2 "><div class="col"> <button  class="btn btn-primary" type="button" data-dismiss="modal" >Create Chart</button></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+</body>
+
+</html>

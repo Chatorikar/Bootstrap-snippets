@@ -1,0 +1,59 @@
+        <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10 col-md-12 col-lg-11 col-xl-10 pl-0 ml-0">
+                        <div class="card card0">
+                            <div class="row">
+                                <div class="col-md-6 d-block p-0 m-0 box">
+                                    <div class="col-12 fit-image"> <img src="img/card1.gif" class="side_img"> 
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-8 p-0 box">
+                                    <div class="card rounded-0 border-0 card2">
+                                        <div class="form-card">
+                                                <h1 class="title">
+                                                        <font>Welcome to</font>
+                                                        <font class="Brickshare">Brickshare</font>
+                                                    </h1>
+                                                    <h4 class="title_footer">We make it easy for everyone to invest in real estate.</h4>
+                                            <div class="radio-group">
+                                                <div class='radio selected' data-value=""></div>
+                                                <div class='radio' data-value=""></div> <br>
+                                            </div>
+                                    
+                                                
+                                            <div class="p-1 col-md-12">
+                                                <form class="form-horizontal">
+                                                    <!-- User Name Input -->
+                                                    <div class="form-group row justify-content-center mb-0 px-1 inputWithIcon">
+                                                            <div class="col-12 px-3"> <input type="text" placeholder="UserName" class=" placeicon username"> <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i></div>
+                                                    </div> <!-- Password Input -->
+                                                    <div class="form-group row justify-content-center px-1 inputWithIcon">
+                                                        <div class="col-12 px-3"> <input type="password" placeholder="Password" class=" placeicon password"><i class="fa fa-key" aria-hidden="true"></i> </div>
+                                                    </div> <!-- CheckBox Remember Me-->
+                                                    <div class="form-group row justify-content-center px-3 ">
+                                                        <div class="col-12">
+                                                            <div class="row">
+                                                                <div class="col-6 px-0">
+                                                                    <div class="custom-control custom-checkbox mb-5 mt-2"> <input id="customCheck1" type="checkbox" class="custom-control-input checkbox-muted " > <label for="customCheck1" class="custom-control-label text-muted ml-2 "  id="customCheck1" >Remember Me</label> </div>
+                                                                </div> <!-- Forgot Password Link -->
+                                                                <div class="col-6 px-0 text-right mt-2 "> <span><a href="#" id="customCheck1" >Forgot Password?</a></span> </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- Log in Button -->
+                                                    <div class="row justify-content-around ">
+                                                            <div class="col-md-6 mb-3 "> <input type="submit" value="Login" class="btn btn-primary shadow  lg bg-black rounded"> </div>
+                                                            <div class="col-md-6 mb-5"> <input type="submit" value="Create Profile" class=" btn btn-default shadow lg  bg-black rounded"> </div>         
+                                                    </div>
+                                                </form>   
+                                            </div> 
+                                            <div class="row justify-content-center">
+                                                <div class="text-left bottom"> <span class="txt1">Or Login with </span> <a class="txt2" href="#" >Facebook</a> <a class="txt2" href="#"> Linkedin </a><a class="txt2" href="#">Google</a></div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>

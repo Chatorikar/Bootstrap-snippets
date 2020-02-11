@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - BBBootstrap</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
+
+        body {
+            font-family: 'Julius Sans One', sans-serif;
+            background: #E6F2FE;
+            background-image: url('https://i.imgur.com/VUheK9r.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container{
+            margin-top: 120px;
+        }
+
+        p{
+            font-size: calc(12px + (15 - 12) * ((100vw - 320px) / (1600 - 320))) !important;
+
+        }
+        h5{
+            font-size: calc(15px + (17 - 15) * ((100vw - 320px) / (1600 - 320))) !important;
+
+        }
+        .testimonial {
+            margin: 0 15px;
+        }
+
+        .owl-carousel .owl-item img {
+            width: 100px !important;
+            display: block;
+            width: 100%;
+        }
+
+        .owl-theme .owl-controls {
+            position: absolute;
+            top: 0;
+            right: 20px;
+        }
+
+        .owl-theme .owl-controls .owl-buttons div {
+            position: relative;
+            top: -50px;
+        }
+
+        .owl-prev:before,
+        .owl-next:before {  
+            font-family: FontAwesome;
+            content: "\f060";
+            font-size: 18px !important;
+        }
+
+        .owl-next:before {
+            content : "\f061";
+        }
+
+        #quotes {
+            opacity: 0.3;
+            width: calc(50px + (70 - 50) * ((100vw - 320px) / (1600 - 320)))  !important;
+            height: auto !important;
+        }
+
+    
+        .card-main {
+            padding: 50px ;
+            border-radius: 10px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            box-shadow: 0px 5px 10px rgba(0, 132, 255, 0.8) !important;
+        }
+
+
+        .line{
+            width: 6%;
+            justify-self: center;
+            background-color: #8f9190 !important;
+             height: 1px !important;
+        }
+
+        .line-1{
+            width: 4%;
+            justify-self: center;
+            background-color: #8f9190 !important;
+             height: 1px !important;    
+        }
+
+        .line-2{
+            width: 2%;
+            justify-self: center;
+            background-color: #8f9190 !important;
+            height: 1px !important;    
+        }
+        
+        .car-inner{
+            box-shadow: 2px 2px 4px 0px #b6bfff !important;
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .testimonial {
+                margin: 0 10px;
+            }
+          
+            .owl-theme .owl-controls {
+                top: 0px;
+                right: 0;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .card-main {
+                padding-top: 30px 10px;
+                padding-bottom: 10px ;
+                padding-right: 5px;
+                padding-left: 5px
+            }
+
+        
+
+        }
+
+        @media (max-width: 991px) {
+            .container {
+                max-width: 98%;
+            }
+        }   
+
+    </style>
+
+</head>
+
+<body>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+        <div class="container" >
+            <div class="card card-main">
+                <div class="row text-center mb-5"><div class="col"> <h5 class="font-weight-bold">What people Say about us</h5><hr class="line my-0"> <hr class="line-1 my-0"><hr class="line-2 mt-0"></div> </div>
+                <div class="row justify-content-center mb-5">
+                    <div class=" col">
+                        <div id="testimonial-slider" class="owl-carousel">
+                            <div class="testimonial">
+                                <div class="card mt-3  px-sm-5 px-3 py-sm-3 car-inner  ">
+                                    <div class="card-body pb-3 mb-4">
+                                        <div class="row justify-content-center text-center my-4 ">
+                                            <div class="col">
+                                                <div class="row  d-flex justify-content-center">
+                                                    <div class="col text-left"><img class=" img-1 img-fluid rounded-circle " src="https://i.imgur.com/kkjs7EC.png" width="40" height="40"> </div>
+                                                    <div class="col  text-right"><img class="img-fluid  " id="quotes" src="https://img.icons8.com/ultraviolet/40/000000/quote-right.png"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row"> <div class="col text-left"><h5 class="font-weight-bold">Ruby James</h5><p class="bold "> You are running a great show. I cannot speak highly enough of the team you have at TCT. They are true professionals..</p></div></div>
+                                    </div>
+                                </div>
+                             </div>
+                            <div class="testimonial">
+                                <div class="card mt-3  px-sm-5 px-3 py-sm-3 car-inner  ">
+                                    <div class="card-body pb-3 mb-4">
+                                        <div class="row justify-content-center text-center my-4 ">
+                                            <div class="col">
+                                                <div class="row  d-flex justify-content-center">
+                                                    <div class="col text-left"><img class=" img-1 img-fluid rounded-circle " src="https://i.imgur.com/oW8Wpwi.jpg" width="40" height="40"> </div>
+                                                    <div class="col  text-right"><img class="img-fluid  " id="quotes" src="https://img.icons8.com/ultraviolet/40/000000/quote-right.png"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row"> <div class="col text-left"><h5 class="font-weight-bold">Sophia James</h5><p class="bold "> You are running a great show. I cannot speak highly enough of the team you have at TCT. They are true professionals..</p></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="card mt-3  px-sm-5 px-3 py-sm-3 car-inner  ">
+                                    <div class="card-body pb-3 mb-4">
+                                        <div class="row justify-content-center text-center my-4 ">
+                                            <div class="col">
+                                                <div class="row  d-flex justify-content-center">
+                                                    <div class="col text-left"><img class=" img-1 img-fluid rounded-circle " src="https://i.imgur.com/nUNhspp.jpg" width="40" height="40"> </div>
+                                                    <div class="col text-right"><img class="img-fluid  " id="quotes" src="https://img.icons8.com/ultraviolet/40/000000/quote-right.png"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row"> <div class="col text-left"><h5 class="font-weight-bold">Sarah Ruby</h5><p class="bold "> You are running a great show. I cannot speak highly enough of the team you have at TCT. They are true professionals..</p></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="card mt-3  px-sm-5 px-3 py-sm-3 car-inner  ">
+                                    <div class="card-body pb-3 mb-4">
+                                        <div class="row justify-content-center text-center my-4 ">
+                                            <div class="col">
+                                                <div class="row  d-flex justify-content-center">
+                                                    <div class="col text-left"><img class=" img-1 img-fluid rounded-circle " src="https://i.imgur.com/gazoShk.jpg" width="40" height="40"> </div>
+                                                    <div class="col text-right"><img class="img-fluid  " id="quotes" src="https://img.icons8.com/ultraviolet/40/000000/quote-right.png"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row"> <div class="col text-left"><h5 class="font-weight-bold">Riyans Roberts</h5><p class="bold "> You are running a great show. I cannot speak highly enough of the team you have at TCT. They are true professionals..</p></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="card mt-3  px-sm-5 px-3 py-sm-3 car-inner  ">
+                                    <div class="card-body pb-3 mb-4">
+                                        <div class="row justify-content-center text-center my-4 ">
+                                            <div class="col">
+                                                <div class="row  d-flex justify-content-center">
+                                                    <div class="col text-left"><img class=" img-1 img-fluid rounded-circle " src="https://i.imgur.com/HjKTNkG.jpg" width="40" height="40"> </div>
+                                                    <div class="col text-right"><img class="img-fluid  " id="quotes" src="https://img.icons8.com/ultraviolet/40/000000/quote-right.png"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row"> <div class="col text-left"><h5 class="font-weight-bold">Kevin Lewis</h5><p class="bold "> You are running a great show. I cannot speak highly enough of the team you have at TCT. They are true professionals..</p> </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+
+    <script> $(document).ready(function () {
+            $("#testimonial-slider").owlCarousel({
+                items: 2,
+                itemsDesktop: [1000, 2],
+                itemsDesktopSmall: [979, 2],
+                itemsTablet: [867, 1],
+                pagination: false,
+                navigation: true,
+                navigationText: ["", ""],
+                slideSpeed: 600,
+                autoPlay: true
+                
+            });
+        });
+    </script>
+</body>
+
+</html>

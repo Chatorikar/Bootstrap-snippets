@@ -1,0 +1,98 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Snippet - BBBootstrap</title>
+                                <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='' rel='stylesheet'>
+                                <style>body {
+    background: #eee
+}
+
+a:hover {
+    color: #4FC3F7 !important
+}
+
+.container {
+    margin-top: 250px
+}
+
+li a:focus,
+li a:active {
+    outline: none !important;
+    box-shadow: none !important
+}
+
+img {
+    vertical-align: middle;
+    opacity: 0.5;
+    cursor: pointer
+}
+
+.breadcrumb>li+li:before {
+    content: "//" !important;
+    color: #ccc !important;
+    font-size: larger
+}
+
+li a {
+    text-decoration: none !important;
+    color: #aaa
+}
+
+.breadcrumb {
+    padding: 15px;
+    font-size: 15px;
+    color: #fff !important;
+    letter-spacing: 1px;
+    border-radius: 8px !important
+}
+
+@media (max-width: 767px) {
+    .breadcrumb {
+        font-size: 11px
+    }
+
+    .breadcrumb-item+.breadcrumb-item {
+        padding-left: 0
+    }
+
+    img {
+        margin-top: 2px !important;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        padding: .15em !important
+    }
+}
+
+.active-1 {
+    color: #4FC3F7 !important;
+    font-weight: bolder
+}</style>
+                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+                                <script type='text/javascript'>$(document).ready(function () {
+$('ol li a').click(function () {
+$('ol li a.active-1').removeClass('active-1');
+$('ol li a.active-1').addClass('font-weight-bold');
+$(this).closest('a').addClass('active-1');
+});
+
+});</script>
+                            </head>
+                            <body>
+                            <div class="container d-flex justify-content-center">
+    <ol class="breadcrumb shadow-lg bg-white">
+        <li class="breadcrumb-item "><img class="irc_mi" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1575780128/188-1884566_sublimetext-3-white-outline-sublime-text-3-icon.jpg" width="25" height="25"><a href="#" class="pr-md-3 pl-md-2 pr-2 pl-1 ">Home</a></li>
+        <li class="breadcrumb-item "><a href="#" class="px-md-3 px-1 my-3">Budget </a></li>
+        <li class="breadcrumb-item "><a href="#" class="px-md-3 px-1"> Wallet</a> </li>
+        <li class="breadcrumb-item "><a href="#" class="px-md-3 px-1 active-1">Costs</a> </li>
+    </ol>
+</div>
+                            </body>
+                        </html>

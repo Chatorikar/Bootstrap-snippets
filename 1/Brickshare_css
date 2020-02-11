@@ -1,0 +1,346 @@
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    html {
+        height: 100%
+    }
+
+    body {
+        overflow-x: hidden;
+        background-color: rgb(203, 228, 241);
+        padding-bottom: 0 !important;
+        height: 100%;
+        position: absolute;
+        background:url(img/bg.gif)no-repeat center center fixed;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .card0 {
+        margin: 50px 12px 40px 12px;
+        border: 0;
+        width: 100%;
+        border-radius: 20px;
+
+        -webkit-box-shadow: 0 0 10px rgb(82, 57, 57);
+        box-shadow: 0 0 10px rgb(82, 57, 57);
+    }
+
+    .Brickshare{
+        color:#039BE5 ;
+    }
+
+    .side_img{
+        width: 100%;
+        object-fit: cover;
+        object-position: left;
+        height: 800px;
+        border-radius: 20px;      
+    }
+
+    .card1 {
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+        height: 100%;
+        background-color: #EDE7F6;
+        position: relative;
+        border-top-left-radius: 10px !important;
+        border-bottom-left-radius: 10px !important
+    }
+
+    .txt1{
+        margin-right: 50px;
+        font-family: 'Quicksand', sans-serif;
+        color:#BDBDBD;
+    }
+
+    .txt2{
+        margin-inline-start: 5%;
+        font-family: 'Quicksand', sans-serif;
+        
+    }
+
+    .title {
+        font-size: 33px;
+        color: #000000;
+        padding-bottom: 20px;
+        font-family: 'Quicksand', sans-serif;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+
+    }
+
+    .title_footer
+    {
+        width: 80%;
+        color:#BDBDBD;
+        padding-bottom: 20px;
+        line-height: 30px;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .placeicon {
+        font-family: fontawesome !important;
+      
+    }
+
+    .card2 {
+        padding: 50px;
+        margin: 0;
+        height: 100%;
+        border-top-right-radius: 10px !important;
+        border-bottom-right-radius: 10px !important
+    }
+
+    #customCheck1{
+        color:#BDBDBD;  
+    }
+
+    .form-card {
+        height: 100%;
+        position: absolute;
+    }
+
+    .form-card input,
+    .form-card textarea {
+        padding: 15px 10px 15px 10px;
+        border: none;
+        border: 1px solid lightgrey !important;
+        border-radius: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .form-card input:focus,
+    .form-card textarea:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        font-weight: bold;
+        border: 1px solid rgb(122, 11, 11);
+        outline-width: 0
+    }
+
+    .form-card .btn {
+        font-weight: bold;
+        width: 100%;
+        border-radius: 4px;
+        letter-spacing: 1px;
+        font-size: 18px !important;
+    }
+
+    .bottom {
+        bottom: 0;
+        position: absolute;
+        width: 100%
+    }
+
+    
+    .fit-image {
+        width: 100%;
+        object-fit: cover;
+        object-position: top left;
+    }
+
+    .radio-group {
+        position: relative;
+        margin-bottom: 70px;
+       
+    }
+
+    .radio {
+        display: inline-block;
+        border-radius: 0;
+        box-sizing: border-box;
+        border-top: 3px solid #E8F5E9;
+        cursor: pointer;
+        margin: 8px 10px 8px 0px;
+        transition: 0.5s;
+        width: 20%;
+      
+    }
+
+    .radio:hover {
+        border-top: 3px #039BE5 solid;
+        transition: 0.4s;
+    }
+
+     .selected{
+        border-top: 3px #039BE5 solid;
+    }
+
+    .bottom {
+        bottom: 80px;
+        left: 20px;
+        position: absolute;
+    }
+
+    .btn-primary{
+        color: white;
+        box-shadow: 0px 10px -14px 14px #FFF;
+        color: white !important;
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.2) 20%, rgba(0,0,0,0.15) 80%, rgba(0,0,0,0.05));
+        border-radius: 8px !important;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.2) 20%, rgba(0,0,0,0.15) 80%, rgba(0,0,0,0.05));
+        background-repeat: repeat-x;
+        background-color: rgb(55, 124, 235);    
+        font-family: 'Quicksand', sans-serif; 
+        
+    }
+
+    .btn-default:hover,  
+    .btn-default:focus {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255,255,255,0.2) 20%, rgba(0,0,0,0.15) 80%, rgba(0,0,0,0.05));
+        background-repeat: repeat-x;
+        background-color: rgb(248, 248, 248);  
+        box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 20px rgba(255,255,255,0.15) inset, 0 1px 0 0 #adadad;      
+        
+    }
+
+    .btn-default{
+        color:#039BE5  !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 20px rgba(255,255,255,0.15) inset, 0 1px 0 0 #adadad;   
+        border-radius: 8px !important;
+        font-size: 20px !important;
+        transition: 0.5s;
+    }
+
+    input[type="text"]  {
+        width: 100%;
+        border: 2px solid #aaa;
+        border-radius: 4px;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+        transition: 0.3s;
+    }
+
+    input[type="text"]:focus {
+        border-color: dodgerBlue !important;
+        box-shadow: 0 0 8px 0 dodgerBlue;
+    }
+
+    input[type="password"]:focus {
+        border-color: dodgerBlue !important;
+        box-shadow: 0 0 8px 0 dodgerBlue;
+    }
+
+    .inputWithIcon input[type="text"] {
+        padding-left: 40px;
+    }
+
+    .inputWithIcon {
+        position: relative;
+    }
+
+    .inputWithIcon i {
+        position: absolute;
+        left: 0;
+        top: 8px;
+        padding: 10px 20px;
+        color: #aaa;
+        transition: 0.3s;
+    }
+
+    .inputWithIcon input[type="text"]:focus + i {
+        color: dodgerBlue;
+    }
+
+
+    input[type="password"]  {
+        width: 100%;
+        border: 2px solid #aaa;
+        border-radius: 4px; 
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+        transition: 0.3s;
+    }
+
+    .inputWithIcon input[type="password"] {
+        padding-left: 40px;
+    }
+
+    .inputWithIcon input[type="password"]:focus + i {
+        color: dodgerBlue;
+    }
+
+    @media (max-width: 768px) {
+        
+
+        .card1 {
+            display: none;
+        }
+
+        .side_img{
+            display: none;
+        }
+
+        .card2 {
+            border-bottom-left-radius: 10px !important;
+            border-bottom-right-radius: 10px !important;
+            border-top-left-radius: 0px !important;
+            border-top-right-radius: 0px !important
+        }
+
+        .form-card {
+            position: relative;
+        }
+
+        .txt2{
+            margin-inline-start: 1%;
+        }
+        .txt1{
+            margin-right: 1%;
+        }
+        .bottom {
+            bottom: 0 !important;
+            position: relative;
+        }
+    }
+
+    .customCheck2{
+        color: #039BE5;
+    }
+
+    .username {
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+
+    .password {
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+    }
+
+    .custom-control-label::before, 
+    .custom-control-label::after {
+       
+        width: 1.0rem !important;
+        height: 1.0rem !important;
+     
+
+    }
+
+    .custom-control-label{
+       color:#BDBDBD  !important;
+       
+    }
